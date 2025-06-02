@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="scroll-smooth">
+      <main className="ml-48 scroll-smooth">
         <Home />
         <About />
         <Projects />
