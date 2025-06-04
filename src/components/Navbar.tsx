@@ -1,8 +1,14 @@
-import { useState } from "react";
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 
-const Navbar = () => {
-    const [isVisible, setIsVisible] = useState(false);
+interface NavbarProps {
+  isVisible: boolean;
+  setIsVisible: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+
+const Navbar = ({ isVisible, setIsVisible }: NavbarProps) => {
+
+    
     const sections = ["home", "about", "projects", "contact"];
 
     return (
@@ -15,16 +21,27 @@ const Navbar = () => {
 
             {/* Sidebar */}
             <nav
-                className={`fixed top-0 left-0 h-screen w-48 bg-white dark:bg-gray-900 shadow-md 
-        transition-transform duration-300 z-[59] group
+        className={`fixed top-0 left-0 h-screen w-48 bg-white dark:bg-gray-900 shadow-md 
+        transition-transform duration-300 z-[59]
         ${isVisible ? "translate-x-0" : "-translate-x-32"}`}
-                onMouseLeave={() => setIsVisible(false)}
-            >
+        onMouseLeave={() => setIsVisible(false)}
+      >
                 {/* Vertical NAVIGATION Label (only when hidden) */}
                 {!isVisible && (
                     <div className="absolute top-1/2 right-[6px] -translate-y-1/2 text-[40px] tracking-widest text-gray-600 dark:text-gray-300">
                         ≡
                     </div>
+                )}
+
+                {/* Close button (mobile only) */}
+                {isVisible && (
+                    <button
+                        className="absolute top-4 right-4 text-2xl text-gray-600 dark:text-gray-300 md:hidden z-10"
+                        onClick={() => setIsVisible(false)}
+                        aria-label="Close Sidebar"
+                    >
+                        ←
+                    </button>
                 )}
 
                 <div className="h-full flex flex-col justify-between items-center py-10">
