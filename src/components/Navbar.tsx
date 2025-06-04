@@ -9,7 +9,7 @@ const Navbar = () => {
         <>
             {/* Hover zone triggers sidebar open */}
             <div
-                className="fixed top-0 left-0 h-screen w-6 z-[60] bg-transparent"
+                className="fixed top-0 left-0 h-screen w-16 z-[60] bg-transparent"  // w-16 changes hover zone detection size to the right
                 onMouseEnter={() => setIsVisible(true)}
             />
 
