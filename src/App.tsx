@@ -1,3 +1,4 @@
+import "./App.css"
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -13,14 +14,16 @@ function App() {
       <Navbar isVisible={isNavVisible} setIsVisible={setIsNavVisible} />
       <Scrollbar />
       <main
-        className={`scroll-smooth transition-all duration-300 ${
-          isNavVisible ? "ml-48" : "ml-0"
+        className={`scroll-smooth transition-all duration-300 min-h-screen ${
+          isNavVisible ? "ml-48" : "ml-4 sm:ml-0"
         }`}
       >
-        <Home />
-        <About />
-        <Projects />
-        <Contact />
+        <div className="max-w-screen-lg mx-auto px-4">
+          <Home />
+          <About />
+          <Projects />
+          <Contact />
+        </div>
       </main>
     </>
   );

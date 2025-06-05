@@ -1,0 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+.global-content {
+  @apply max-w-xl mx-auto px-4 text-center;
+}
+

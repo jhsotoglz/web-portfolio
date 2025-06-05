@@ -1,14 +1,14 @@
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 interface NavbarProps {
-  isVisible: boolean;
-  setIsVisible: React.Dispatch<React.SetStateAction<boolean>>;
+    isVisible: boolean;
+    setIsVisible: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 
 const Navbar = ({ isVisible, setIsVisible }: NavbarProps) => {
 
-    
+
     const sections = ["home", "about", "projects", "contact"];
 
     return (
@@ -21,14 +21,22 @@ const Navbar = ({ isVisible, setIsVisible }: NavbarProps) => {
 
             {/* Sidebar */}
             <nav
-        className={`fixed top-0 left-0 h-screen w-48 bg-white dark:bg-gray-900 shadow-md 
+                className={`fixed top-0 left-0 h-screen w-48 bg-white dark:bg-gray-900 shadow-md 
         transition-transform duration-300 z-[59]
         ${isVisible ? "translate-x-0" : "-translate-x-32"}`}
-        onMouseLeave={() => setIsVisible(false)}
-      >
+                onMouseLeave={() => setIsVisible(false)}
+            >
+
+                {/* Logo on hidden sidebar */}
+                {!isVisible && (
+                    <div className="absolute top-14 right-[16px] -translate-y-1/2 text-2xl font-bold text-gray-800 dark:text-white mb-10">
+                        JH
+                    </div>
+                )}
+
                 {/* Vertical NAVIGATION Label (only when hidden) */}
                 {!isVisible && (
-                    <div className="absolute top-1/2 right-[10px] -translate-y-1/2 text-[40px] tracking-widest text-gray-600 dark:text-gray-300">
+                    <div className="absolute top-1/2 right-[16px] -translate-y-1/2 text-2xl tracking-widest text-gray-600 dark:text-gray-300">
                         ≡
                     </div>
                 )}
@@ -47,7 +55,7 @@ const Navbar = ({ isVisible, setIsVisible }: NavbarProps) => {
                 <div className="h-full flex flex-col justify-between items-center py-10">
                     {/* Top Section */}
                     <div className="flex flex-col items-center">
-                        <div className="text-2xl font-bold text-gray-800 dark:text-white mb-10">
+                        <div className="text-2xl font-bold text-gray-800 dark:text-white mb-10 hidden md:block">
                             JH
                         </div>
                         <ul className="flex flex-col gap-6 text-sm font-medium">
