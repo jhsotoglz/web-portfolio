@@ -36,7 +36,7 @@ const Navbar = ({ isVisible, setIsVisible }: NavbarProps) => {
 
                 {/* Vertical NAVIGATION Label (only when hidden) */}
                 {!isVisible && (
-                    <div className="absolute top-1/2 right-[16px] -translate-y-1/2 text-2xl tracking-widest text-gray-600 dark:text-gray-300">
+                    <div className="absolute top-1/2 right-[16px] -translate-y-1/2 text-4xl tracking-widest text-gray-600 dark:text-gray-300">
                         ≡
                     </div>
                 )}
