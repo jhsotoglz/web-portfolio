@@ -5,8 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        'screen-dynamic': '100dvh',
+      },
+      minHeight: {
+        'screen-dynamic': '100dvh',
+      },
+    },
   },
   plugins: [],
 }
-

@@ -14,7 +14,7 @@ function App() {
       <Navbar isVisible={isNavVisible} setIsVisible={setIsNavVisible} />
       <Scrollbar />
       <main
-        className={`scroll-smooth transition-all duration-300 min-h-screen ${
+        className={`scroll-smooth transition-all duration-300 min-h-screen-dynamic ${
           isNavVisible ? "ml-48" : "ml-4 sm:ml-0"
         }`}
       >

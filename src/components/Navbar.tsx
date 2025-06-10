@@ -15,13 +15,13 @@ const Navbar = ({ isVisible, setIsVisible }: NavbarProps) => {
         <>
             {/* Hover zone triggers sidebar open */}
             <div
-                className="fixed top-0 left-0 h-screen w-16 z-[60] bg-transparent"  // w-16 changes hover zone detection size to the right
+                className="fixed top-0 left-0 min-h-screen-dynamic w-16 z-[60] bg-transparent"  // w-16 changes hover zone detection size to the right
                 onMouseEnter={() => setIsVisible(true)}
             />
 
             {/* Sidebar */}
             <nav
-                className={`fixed top-0 left-0 h-screen w-48 bg-white dark:bg-gray-900 shadow-md 
+                className={`fixed top-0 left-0 min-h-screen-dynamic w-48 bg-white dark:bg-gray-900 shadow-md 
         transition-transform duration-300 z-[59]
         ${isVisible ? "translate-x-0" : "-translate-x-32"}`}
                 onMouseLeave={() => setIsVisible(false)}
@@ -52,7 +52,7 @@ const Navbar = ({ isVisible, setIsVisible }: NavbarProps) => {
                     </button>
                 )}
 
-                <div className="h-full flex flex-col justify-between items-center py-10">
+                <div className="min-h-screen-dynamic flex flex-col justify-between items-center py-10">
                     {/* Top Section */}
                     <div className="flex flex-col items-center">
                         <div className="text-2xl font-bold text-gray-800 dark:text-white mb-10 hidden md:block">
