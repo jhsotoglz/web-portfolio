@@ -44,7 +44,7 @@ const Navbar = ({ isVisible, setIsVisible }: NavbarProps) => {
                 {/* Close button (mobile only) */}
                 {isVisible && (
                     <button
-                        className="absolute top-4 right-4 text-2xl text-gray-600 dark:text-gray-300 md:hidden z-10"
+                        className="absolute top-4 right-4 text-2xl text-gray-600 dark:text-gray-300 lg:hidden z-10"
                         onClick={() => setIsVisible(false)}
                         aria-label="Close Sidebar"
                     >
