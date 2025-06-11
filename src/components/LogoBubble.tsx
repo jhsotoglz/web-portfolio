@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 interface LogoBubbleProps {
   navOpen: boolean;
 }
 
 const LogoBubble: React.FC<LogoBubbleProps> = ({ navOpen }) => {
-  if (navOpen) return null;
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const updateSize = () => {
+      setIsMobile(window.innerWidth < 640); // Tailwind 'sm' breakpoint
+    };
+
+    updateSize(); // initial check
+    window.addEventListener("resize", updateSize);
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -13,7 +23,10 @@ const LogoBubble: React.FC<LogoBubbleProps> = ({ navOpen }) => {
 
   return (
     <div
-      className="fixed top-4 left-4 z-[70] dark:bg-gray-800 text-white font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center shadow-lg cursor-pointer select-none hover:bg-blue-800 transition-colors"
+      className={`fixed left-4 z-[70] dark:bg-gray-800 text-white font-bold text-xl w-12 h-12 
+      rounded-full flex items-center justify-center shadow-lg cursor-pointer select-none 
+      hover:bg-blue-800 transition-all duration-300
+      ${isMobile && navOpen ? "top-20 pointer-events-none opacity-50" : "top-4"}`}
       onClick={scrollToTop}
       title="Back to Top"
     >
