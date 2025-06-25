@@ -7,12 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#002642",
-        surface: "#840032",
-        primary: "#E59500",
-        secondary: "#adb5bd",
-        accent: "#ced4da",
-        text: "#E5DADA",
+        main: "#548CA8",
+        secondary: "#476072",
+        accent: "#334257",
+        // Background color of whole web app in App.css
       },
       height: {
         "screen-dynamic": "100dvh",

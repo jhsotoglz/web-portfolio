@@ -55,7 +55,8 @@ const MainNav = ({ navOpen, setNavOpen }: MainNavProps) => {
       {/* Mobile Closed Toggle */}
       {isMobile && !navOpen && (
         <div
-          className="fixed top-4 right-4 w-12 h-12 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 shadow-lg cursor-pointer text-3xl text-gray-800 dark:text-white transition-colors hover:bg-gray-200 dark:hover:bg-gray-700 z-50"
+          className="fixed top-4 right-4 w-12 h-12 flex items-center justify-center rounded-full
+                      bg-secondary shadow-lg cursor-pointer text-3xl text-gray-800 dark:text-white transition-colors"
           onClick={() => setNavOpen(true)}
           title="Open Navigation"
         >
@@ -67,7 +68,8 @@ const MainNav = ({ navOpen, setNavOpen }: MainNavProps) => {
       {(!isMobile || navOpen) && (
         <div
           ref={navRef}
-          className="fixed top-4 left-1/2 -translate-x-1/2 z-50 inline-flex items-center bg-white dark:bg-gray-800 shadow-lg rounded-full px-4 py-2 overflow-x-auto gap-2"
+          className="fixed top-4 left-1/2 -translate-x-1/2 z-50 inline-flex items-center bg-secondary 
+                      shadow-lg rounded-full px-4 py-2 overflow-x-auto gap-2"
         >
           <ul className="flex gap-2 text-sm font-medium">
             {sections.map((section) => (
@@ -76,8 +78,8 @@ const MainNav = ({ navOpen, setNavOpen }: MainNavProps) => {
                   onClick={() => handleScrollToSection(section)}
                   className={`px-4 py-1.5 rounded-full transition-colors whitespace-nowrap ${
                     active === section
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+                      ? "bg-accent text-white"
+                      : "text-gray-600 dark:text-gray-300 hover:bg-secondary"
                   }`}
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}

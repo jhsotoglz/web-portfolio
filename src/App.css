@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  background-color: #02040F;
+  background-color: #EEEEEE;  /*Background color of web app */
 }
 .global-content {
   @apply max-w-7xl mx-auto text-center;
