@@ -7,9 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        main: "#548CA8",
-        secondary: "#476072",
-        accent: "#334257",
+        main: "#3C3D37",
+        secondary: "#697565",
+        accent: "#40534C",
+        extra: "#40534C",
         // Background color of whole web app in App.css
       },
       height: {
