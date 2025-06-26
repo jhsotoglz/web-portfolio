@@ -2,7 +2,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen-dynamic flex justify-center items-center bg-gradient-to-b from-main via-black to-gray-900 text-white overflow-hidden"
+      className="relative min-h-screen-dynamic flex justify-center items-center text-white overflow-hidden"
     >
       {/* Soft background glow */}
       <div className="absolute w-[500px] h-[500px] bg-secondary rounded-full blur-[120px] opacity-20 top-1/3 left-1/2 -translate-x-1/2 -z-10" />
