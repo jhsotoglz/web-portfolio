@@ -14,10 +14,10 @@ export default {
         // Background color of whole web app in App.css
       },
       height: {
-        "screen-dynamic": "100dvh",
+        'screen-dynamic': '100svh',
       },
       minHeight: {
-        "screen-dynamic": "100dvh",
+        'screen-dynamic': '100svh',
       },
     },
   },
