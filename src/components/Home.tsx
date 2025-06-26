@@ -31,7 +31,7 @@ const Home = () => {
 
         <a
           href="#projects"
-          className="mt-8 inline-block px-6 py-3 bg-extra text-white rounded-2xl shadow-lg hover:bg-secondary transition-all duration-300 hover:scale-105 hover:shadow-xl"
+          className="mt-8 inline-block px-6 py-3 bg-secondary text-white rounded-2xl shadow-lg hover:bg-accent transition-all duration-300 hover:scale-105 hover:shadow-xl"
         >
           View My Work
         </a>
