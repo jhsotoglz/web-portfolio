@@ -8,9 +8,9 @@ export default {
     extend: {
       colors: {
         main: "#3C3D37",
-        secondary: "#697565",
-        accent: "#40534C",
-        extra: "#40534C",
+        secondary: "#40534C",
+        accent: "#2C3930",
+        extra: "#697565",
         // Background color of whole web app in App.css
       },
       height: {

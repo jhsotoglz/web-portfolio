@@ -8,7 +8,7 @@ const Home = () => {
         {/* Profile Picture */}
         <div className="w-32 h-32 sm:w-40 sm:h-40 mb-6">
           <img
-            src="../src/assets/profile-picture.png" // replace with your actual image path
+            src="../src/assets/jesus_soto.jpg" // replace with your actual image path
             alt="Profile"
             className="w-full h-full object-cover rounded-full border-4 border-secondary shadow-lg"
           />
@@ -17,12 +17,12 @@ const Home = () => {
         <h1 className="text-4xl sm:text-5xl font-bold text-white">
           Welcome to my{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">
-            portfolio
+            Portfolio!
           </span>
         </h1>
 
-        <h2 className="text-xl text-white/80 mt-4">
-          Software Engineer | AI Enthusiast | Maker
+        <h2 className="text-xl text-white/80 mt-6">
+          Software Engineer & AI Enthusiast
         </h2>
 
         <p className="mt-6 max-w-xl mx-auto text-white/70">
