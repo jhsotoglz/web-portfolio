@@ -8,7 +8,7 @@ const Home = () => {
         {/* Profile Picture */}
         <div className="w-32 h-32 sm:w-40 sm:h-40 mb-6">
           <img
-            src="../src/assets/jesus_soto.jpg" // replace with your actual image path
+            src="../src/assets/jesus_soto.jpg" 
             alt="Profile"
             className="w-full h-full object-cover rounded-full border-4 border-secondary shadow-lg"
           />
