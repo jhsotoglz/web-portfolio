@@ -24,7 +24,7 @@ const About = () => {
     return (
         <section
             id="about"
-            className="px-4 scroll-mt-16 text-white flex flex-col items-center lg:-mt-36 mb-8"
+            className="px-4 scroll-mt-16 text-white flex flex-col items-center lg:-mt-40 mb-8"
         >
             <div className="w-full max-w-4xl text-center">
                 <h1 className="text-4xl font-bold mb-6">
