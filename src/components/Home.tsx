@@ -21,7 +21,7 @@ const Home = () => {
           </span>
         </h1>
 
-        <h2 className="text-xl text-white/80 mt-6">
+        <h2 className="text-xl text-white/90 mt-6">
           Software Engineer & AI Enthusiast
         </h2>
 
