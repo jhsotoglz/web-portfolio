@@ -1,50 +1,60 @@
+import {
+    SiReact,
+    SiTypescript,
+    SiJavascript,
+    SiNodedotjs,
+    SiFirebase,
+    SiTailwindcss,
+    SiDocker,
+    SiPython,
+} from "react-icons/si";
+
 const About = () => {
+    const skills = [
+        { Icon: SiReact, name: "React", color: "#61DAFB" },
+        { Icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
+        { Icon: SiJavascript, name: "JavaScript", color: "#F7DF1E" },
+        { Icon: SiNodedotjs, name: "Node.js", color: "#339933" },
+        { Icon: SiFirebase, name: "Firebase", color: "#FFCA28" },
+        { Icon: SiTailwindcss, name: "Tailwind CSS", color: "#38BDF8" },
+        { Icon: SiDocker, name: "Docker", color: "#2496ED" },
+        { Icon: SiPython, name: "Python", color: "#3776AB" },
+    ];
+
     return (
         <section
             id="about"
-            className="px-4 scroll-mt-16 text-white flex justify-center items-start lg:-mt-36"
+            className="px-4 scroll-mt-16 text-white flex flex-col items-center lg:-mt-36 mb-8"
         >
-
-            <div className="w-full max-w-4xl">
-                <h1 className="text-4xl font-bold mb-8 text-center">
+            <div className="w-full max-w-4xl text-center">
+                <h1 className="text-4xl font-bold mb-6">
                     About <span className="text-secondary">Me</span>
                 </h1>
 
-                <p className="text-lg leading-relaxed mb-6">
-                    Hey there! I'm <strong>Jesus Soto</strong> — a Software Engineer passionate about building interactive applications, real-time systems, and modern web interfaces. I'm currently completing my degree in Software Engineering at <strong>Iowa State University</strong> with a minor in Cybersecurity.
+                <p className="text-lg leading-relaxed mb-4">
+                    I'm <strong>Jesus Soto</strong>, a passionate Software Engineer with a background in robotics and real-time systems. I'm currently studying Software Engineering with a minor in <strong>Artificial Intelligence</strong> at Iowa State University.
                 </p>
 
-                <p className="text-lg leading-relaxed mb-6">
-                    Over the years, I've contributed to projects involving AI dashboards, robotics (shoutout to the <strong>Cardinal Space Mining Club</strong>!), real-time data pipelines with Kafka, and user-friendly React-based widget systems. I thrive at the intersection of performance, usability, and systems thinking.
+                <p className="text-lg leading-relaxed mb-4">
+                    I love building responsive, data-driven applications using tools like React, Kafka, and Firebase. My work blends usability, performance, and clean design, especially in engineering dashboards and robotics controls.
                 </p>
 
-                <p className="text-lg leading-relaxed mb-6">
-                    When I'm not coding, you'll find me enjoying anime (yes, I grew up on <em>Dragon Ball Z</em>), working out to stay sharp, or helping my friends with their tech setups. I’m an extrovert by nature — I love collaborating, mentoring, and sharing what I learn.
-                </p>
+                <h2 className="text-4xl font-semibold mt-10 mb-6">Skills</h2>
 
-                <p className="text-lg leading-relaxed mb-6">
-                    Right now, I'm working on <strong>GridAI</strong>, a smart grid assistant that integrates custom widgets, Kafka-based telemetry, and real-time visualizations — all wrapped up in a responsive React frontend. I’m also leading safety efforts in our robotics club and helping my peers succeed.
-                </p>
-
-                <div className="mt-8">
-                    <h2 className="text-2xl font-semibold mb-4">Fun Facts</h2>
-                    <ul className="list-disc list-inside space-y-2">
-                        <li>I was a diesel technician before becoming a software engineer.</li>
-                        <li>I can navigate both frontend (React, TypeScript) and backend (Node.js, Kafka, Docker) systems with ease.</li>
-                        <li>I enjoy explaining complex ideas in simple ways — communication is one of my hidden strengths.</li>
-                        <li>My favorite tech stack? React + TypeScript + Firebase (or Kafka when it gets serious).</li>
-                        <li>I care deeply about design, performance, and clarity — whether in code or communication.</li>
-                    </ul>
+                <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 text-4xl">
+                    {skills.map(({ Icon, name, color }, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col items-center group cursor-pointer hover:scale-110 transition-transform duration-300"
+                        >
+                            <Icon color={color} />
+                            <span className="text-sm text-white mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                {name}
+                            </span>
+                        </div>
+                    ))}
                 </div>
 
-                <div className="mt-10 text-center">
-                    <a
-                        href="#contact"
-                        className="inline-block px-6 py-3 bg-secondary text-white rounded-2xl shadow-lg hover:bg-accent transition-all duration-300 hover:scale-105 hover:shadow-xl"
-                    >
-                        Let’s Connect!
-                    </a>
-                </div>
             </div>
         </section>
     );
