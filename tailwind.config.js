@@ -1,5 +1,5 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+// tailwind.config.js
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -11,13 +11,15 @@ export default {
         secondary: "#40534C",
         accent: "#2C3930",
         extra: "#697565",
-        // Background color of whole web app in App.css
       },
       height: {
         'screen-dynamic': '100svh',
       },
       minHeight: {
         'screen-dynamic': '100svh',
+      },
+      screens: {
+          'landscape-short': { 'raw': '(orientation: landscape) and (max-height: 500px)' }
       },
     },
   },
