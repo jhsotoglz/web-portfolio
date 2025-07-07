@@ -19,7 +19,7 @@ const Home = () => {
             <img
               src="../src/assets/jesus_soto.jpg"
               alt="Profile"
-              className="w-full h-full object-cover rounded-full border-4 border-extra shadow-lg"
+              className="w-full h-full object-cover rounded-full border-4 border-accent shadow-lg"
             />
           </div>
 
