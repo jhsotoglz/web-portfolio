@@ -38,12 +38,16 @@ const Home = () => {
           </p>
 
           {/* Call to Action */}
-          <a
-            href="#projects"
+          <button
+            onClick={() => {
+              const el = document.getElementById("projects");
+              if (el) el.scrollIntoView({ behavior: "smooth" });
+            }}
             className="mt-8 font-black inline-block px-6 py-3 bg-green-400 text-black rounded-2xl shadow-lg hover:bg-green-200 transition-all duration-300 hover:scale-105 hover:shadow-xl"
           >
             View My Work
-          </a>
+          </button>
+
         </div>
       </div>
     </section>
