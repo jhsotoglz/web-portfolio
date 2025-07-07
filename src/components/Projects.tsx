@@ -39,7 +39,7 @@ const Projects = () => {
 
             <div className="max-w-6xl w-full mt-6">
                 <h1 className="text-4xl font-bold text-center mb-12">
-                    My <span className="text-extra">Projects</span>
+                    My <span className="text-green-400">Projects</span>
                 </h1>
 
                 <div className="grid gap-10 md:grid-cols-2">

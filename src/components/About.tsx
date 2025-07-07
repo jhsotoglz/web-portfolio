@@ -28,7 +28,7 @@ const About = () => {
         >
             <div className="w-full max-w-4xl text-center">
                 <h1 className="text-4xl font-bold mb-6 mt-6">
-                    About <span className="text-secondary">Me</span>
+                    About <span className="text-green-400">Me</span>
                 </h1>
 
                 <p className="text-lg leading-relaxed mb-4">
