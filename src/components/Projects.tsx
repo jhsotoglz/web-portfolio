@@ -46,7 +46,7 @@ const Projects = () => {
                     {projects.map((project, idx) => (
                         <div
                             key={idx}
-                            className="bg-secondary p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+                            className="bg-main p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
                         >
                             <h2 className="text-2xl font-semibold text-white mb-2">
                                 {project.title}
@@ -57,7 +57,7 @@ const Projects = () => {
                                 {project.tech.map((tech, i) => (
                                     <span
                                         key={i}
-                                        className="bg-accent text-white px-2 py-1 rounded-full"
+                                        className="bg-extra text-white px-2 py-1 rounded-full"
                                     >
                                         {tech}
                                     </span>
