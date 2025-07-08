@@ -36,7 +36,7 @@ const Contact = () => {
           </a>
 
           <a
-            href="https://github.com/jhsoto" // Adjust to your GitHub
+            href="https://github.com/jhsotoglz" // Adjust to your GitHub
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full border border-white text-white font-bold shadow-md hover:bg-white hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-lg"
