@@ -15,13 +15,16 @@ const Home = () => {
         <div className="global-content text-center flex flex-col items-center">
 
           {/* Profile Picture */}
-          <div className="w-32 h-32 sm:w-40 sm:h-40 mb-8">
-            <img
-              src="../src/assets/jesus_soto.jpg"
-              alt="Profile"
-              className="w-full h-full object-cover rounded-full border-4 border-accent shadow-lg"
-            />
-          </div>
+          <div className="mb-8 bg-gradient-to-tr from-green-200 via-green-400 to-gray-800 p-1 rounded-full w-32 h-32 sm:w-40 sm:h-40 shadow-xl">
+  <div className="w-full h-full rounded-full overflow-hidden">
+    <img
+      src="../src/assets/jesus_soto.jpg"
+      alt="Profile"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
+
 
           {/* Headline with name */}
           <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight">
