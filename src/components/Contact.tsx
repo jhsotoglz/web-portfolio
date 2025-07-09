@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="px-4 scroll-mt-16 text-white flex flex-col items-center min-h-screen-dynamic mb-2"
+      className="px-4 scroll-mt-16 text-white flex flex-col items-center min-h-screen-dynamic mb-8"
     >
       <div className="w-full max-w-3xl mt-6 bg-main backdrop-blur-md p-8 rounded-3xl shadow-xl border border-white/10">
 
