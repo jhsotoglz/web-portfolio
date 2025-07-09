@@ -55,7 +55,7 @@ const MainNav = ({ navOpen, setNavOpen }: MainNavProps) => {
       {/* Mobile Closed Toggle */}
       {isMobile && !navOpen && (
         <div
-          className="fixed top-4 right-4 w-12 h-12 flex items-center justify-center rounded-full
+          className="fixed top-4 right-4 w-12 h-12 flex items-center justify-center rounded-full z-50
                       bg-secondary shadow-lg cursor-pointer text-3xl text-gray-800 dark:text-white transition-colors"
           onClick={() => setNavOpen(true)}
           title="Open Navigation"
