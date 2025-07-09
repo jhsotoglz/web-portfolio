@@ -23,7 +23,7 @@ const LogoBubble: React.FC<LogoBubbleProps> = ({ navOpen }) => {
 
   return (
     <div
-      className={`fixed left-4 z-[70] bg-secondary text-white font-bold text-xl w-12 h-12 
+      className={`fixed left-4 z-[70] bg-gray-900 text-green-400 border border-green-400 font-bold text-xl w-12 h-12 
       rounded-full flex items-center justify-center shadow-lg cursor-pointer select-none 
       hover:bg-secondary transition-all duration-300
       ${isMobile && navOpen ? "top-20 pointer-events-none opacity-50" : "top-4"}`}

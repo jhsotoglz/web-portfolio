@@ -55,8 +55,8 @@ const MainNav = ({ navOpen, setNavOpen }: MainNavProps) => {
       {/* Mobile Closed Toggle */}
       {isMobile && !navOpen && (
         <div
-          className="fixed top-4 right-4 w-12 h-12 flex items-center justify-center rounded-full z-50
-                      bg-secondary shadow-lg cursor-pointer text-3xl text-gray-800 dark:text-white transition-colors"
+          className="fixed top-4 right-4 w-12 h-12 flex items-center justify-center rounded-full z-50 bg-gray-900
+                     border border-green-400 shadow-lg cursor-pointer text-3xl text-green-400 transition-colors"
           onClick={() => setNavOpen(true)}
           title="Open Navigation"
         >
@@ -68,7 +68,7 @@ const MainNav = ({ navOpen, setNavOpen }: MainNavProps) => {
       {(!isMobile || navOpen) && (
         <div
           ref={navRef}
-          className="fixed top-4 left-1/2 -translate-x-1/2 z-50 inline-flex items-center bg-secondary 
+          className="fixed top-4 left-1/2 -translate-x-1/2 z-50 inline-flex items-center bg-gray-900 border border-green-400
                       shadow-lg rounded-full px-4 py-2 overflow-x-auto gap-2"
         >
           <ul className="flex gap-2 text-sm font-medium">
@@ -76,11 +76,10 @@ const MainNav = ({ navOpen, setNavOpen }: MainNavProps) => {
               <li key={section}>
                 <button
                   onClick={() => handleScrollToSection(section)}
-                  className={`px-4 py-1.5 rounded-full transition-colors whitespace-nowrap ${
-                    active === section
-                      ? "bg-accent text-white"
-                      : "text-gray-600 dark:text-gray-300 hover:bg-secondary"
-                  }`}
+                  className={`px-4 py-1.5 rounded-full transition-colors whitespace-nowrap ${active === section
+                      ? "text-green-400"
+                      : "text-gray-600 dark:text-gray-300"
+                    }`}
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </button>
