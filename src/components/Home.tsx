@@ -11,7 +11,7 @@ const Home = () => {
         landscape-short:pb-10
       "
     >
-      <div className="landscape-short:mt-12 max-w-screen-sm mx-auto">
+      <div className="landscape-short:mt-12 max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg mx-auto">
         <div className="global-content text-center flex flex-col items-center">
 
           {/* Profile Picture */}
@@ -31,13 +31,13 @@ const Home = () => {
             Hi, I'm Jesus Soto
             <br />
             <span className="bg-clip-text text-3xl text-transparent bg-gradient-to-r from-gray-400 to-green-500">
-              Software Engineer & AI Enthusiast
+              Software Engineer passionate about AI and Robotics
             </span>
           </h1>
 
           {/* Subtext */}
           <p className="mt-6 max-w-xl mx-auto text-white text-lg">
-            I'm in my final semester of Software Engineering at Iowa State University with a minor in Artificial Intelligence. I build responsive, real-time applications focused on clean design, performance, and user experience.
+            I build responsive, real-time applications with clean design and solid performance.
           </p>
 
           {/* Call to Action */}
