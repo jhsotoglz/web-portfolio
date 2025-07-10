@@ -37,7 +37,7 @@ const Home = () => {
 
           {/* Subtext */}
           <p className="mt-6 max-w-xl mx-auto text-white text-lg">
-            I build responsive, real-time applications with a focus on user experience, performance, and clean design. Welcome to my portfolio!
+            I'm in my final semester of Software Engineering at Iowa State University with a minor in Artificial Intelligence. I build responsive, real-time applications focused on clean design, performance, and user experience.
           </p>
 
           {/* Call to Action */}
