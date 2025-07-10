@@ -2,13 +2,20 @@ import { FaGithub, FaYoutube } from "react-icons/fa";
 
 const projects = [
   {
-    title: "GridAI: Smart Electric Grid Management Application",
+    title: "GridAI: Smart Electric Grid Management Web Application",
     description:
-      "An AI-powered dashboard for electric grid telemetry using React, Kafka, Firebase, and dynamic widgets with real-time data updates.",
+      "An all in one web application for electric grid management with real time telemetry using React, Kafka, Firebase, and dynamic widgets with real-time data updates.",
     tech: ["React", "Kafka", "Firebase", "Tailwind CSS", "TypeScript"],
     link: "https://github.com/jhsoto/gridai",
     youtube: null,
     detailsUrl: "/projects/gridai",
+  },
+  {
+    title: "",
+    description: "",
+    tech: [],
+    youtube: null,
+    detailsUrl: "",
   },
   {
     title: "ROS2 Robot Controller - Lunabotics",
