@@ -32,11 +32,15 @@ const About = () => {
                 </h1>
 
                 <p className="text-lg leading-relaxed mb-4">
-                    I'm <strong>Jesus Soto</strong>, a passionate Software Engineer with a background in robotics and real-time systems. I'm currently studying Software Engineering with a minor in <strong>Artificial Intelligence</strong> at Iowa State University.
+                    I'm a Software Engineering student at Iowa State University, currently in my final semester and pursuing a minor in Artificial Intelligence. 
                 </p>
 
                 <p className="text-lg leading-relaxed mb-4">
-                    I love building responsive, data-driven applications using tools like React, Kafka, and Firebase. My work blends usability, performance, and clean design, especially in engineering dashboards and robotics controls.
+                    My academic background and personal projects have introduced me to real-time systems and robotics, areas I’m genuinely passionate about and continue to explore.
+                </p>
+
+                <p className="text-lg leading-relaxed mb-4">
+                    I'm eager to keep learning, contribute to meaningful projects, and grow within a team that values collaboration, innovation, and real-world impact.
                 </p>
 
                 <h2 className="text-4xl font-semibold mt-10 mb-6">Skills</h2>
@@ -54,7 +58,6 @@ const About = () => {
                         </div>
                     ))}
                 </div>
-
             </div>
         </section>
     );
