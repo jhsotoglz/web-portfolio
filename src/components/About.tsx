@@ -32,20 +32,23 @@ const About = () => {
                 </h1>
 
                 <p className="text-lg leading-relaxed mb-4">
-                    I'm a Software Engineering student at Iowa State University, currently in my final semester and pursuing a minor in Artificial Intelligence. 
+                    I'm a <span className="font-semibold text-green-400">Software Engineering student</span> at <strong>Iowa State University</strong>, currently in my final semester and pursuing a minor in <strong>Artificial Intelligence</strong>.
                 </p>
 
                 <p className="text-lg leading-relaxed mb-4">
-                    My academic background and personal projects have introduced me to real-time systems and robotics, areas I’m genuinely passionate about and continue to explore.
+                    My academic background and personal projects have introduced me to <strong>real-time systems</strong> and <strong>robotics</strong>, areas I’m genuinely passionate about and continue to explore.
                 </p>
 
-                <p className="text-lg leading-relaxed mb-4">
-                    I'm eager to keep learning, contribute to meaningful projects, and grow within a team that values collaboration, innovation, and real-world impact.
+                <p className="text-lg leading-relaxed">
+                    I'm eager to keep learning, contribute to <strong>meaningful projects</strong>, and grow within a team that values <strong>collaboration</strong>, <strong>innovation</strong>, and <strong>real-world impact</strong>.
                 </p>
 
-                <h2 className="text-4xl font-semibold mt-10 mb-6">Skills</h2>
 
-                <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 text-4xl">
+                <h2 className="inline-block px-6 py-2 text-green-400 text-2xl font-semibold uppercase tracking-wide rounded-full mt-10 mb-6">
+                    Tools & Technologies
+                </h2>
+
+                <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 text-4xl mb-4">
                     {skills.map(({ Icon, name, color }, index) => (
                         <div
                             key={index}
