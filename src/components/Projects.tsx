@@ -1,43 +1,12 @@
 import { FaGithub, FaYoutube } from "react-icons/fa";
-
-const projects = [
-  {
-    title: "GridAI: Smart Electric Grid Management Web Application",
-    description:
-      "An all in one web application for electric grid management with real time telemetry using React, Kafka, Firebase, and dynamic widgets with real-time data updates.",
-    tech: ["React", "Kafka", "Firebase", "Tailwind CSS", "TypeScript"],
-    link: "https://github.com/jhsoto/gridai",
-    youtube: null,
-    detailsUrl: "/projects/gridai",
-  },
-  {
-    title: "",
-    description: "",
-    tech: [],
-    youtube: null,
-    detailsUrl: "",
-  },
-  {
-    title: "ROS2 Robot Controller - Lunabotics",
-    description:
-      "Teleoperated robot platform for NASA Lunabotics using ROS2, CAN bus communication, and TalonFX motor controllers.",
-    tech: ["ROS2", "Python", "CAN", "Phoenix 6", "Linux"],
-    link: "https://github.com/jhsoto/ros_phoenix6",
-    youtube: null,
-    detailsUrl: "/projects/lunabotics",
-  },
-  {
-    title: "Spanish LeetCode Solutions (YouTube)",
-    description:
-      "Educational video series solving LeetCode problems in Spanish to support the Hispanic programming community.",
-    tech: ["JavaScript", "C++", "Python", "Educational"],
-    link: null,
-    youtube: "https://www.youtube.com/playlist?list=YOUR_LEETCODE_PLAYLIST",
-    detailsUrl: "/projects/leetcode-spanish",
-  },
-];
+import { useState } from "react";
+import type { Project } from "../data/projectData";
+import { projects } from "../data/projectData";
+import ProjectDetailsModal from "./ProjectDetailsModal";
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
   return (
     <section
       id="projects"
@@ -98,20 +67,27 @@ const Projects = () => {
                     </span>
                   </a>
                 )}
-                {project.detailsUrl && (
-                  <a
-                    href={project.detailsUrl}
+                {project.details && (
+                  <button
+                    onClick={() => setSelectedProject(project)}
                     className="ml-auto px-4 py-2 rounded-full bg-green-400 text-black font-semibold shadow-md hover:bg-green-300 
                     transition-all duration-300 hover:scale-105 hover:shadow-lg"
                   >
                     Learn More
-                  </a>
+                  </button>
                 )}
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      {selectedProject && (
+        <ProjectDetailsModal
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
     </section>
   );
 };
