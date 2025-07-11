@@ -9,7 +9,7 @@ interface Props {
 const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
     return (
         <div className="fixed inset-0 z-50 bg-black/70 flex justify-center items-center p-4">
-            <div className="bg-main border border-green-400 rounded-2xl max-w-3xl w-full p-6 relative shadow-2xl overflow-y-auto max-h-[90vh]">
+            <div className="bg-main border border-white/10 rounded-2xl max-w-3xl w-full p-6 relative shadow-2xl overflow-y-auto max-h-[90vh]">
                 {/* Close Button */}
                 <button
                     onClick={onClose}

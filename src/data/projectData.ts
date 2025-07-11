@@ -14,7 +14,7 @@ export const projects: Project[] = [
     description: "An all-in-one web app for electric grid monitoring...",
     tech: ["React", "Kafka", "Firebase", "Tailwind CSS", "TypeScript"],
     link: undefined,
-    youtube: "https://www.youtube.com/embed/YOUR_VIDEO_ID",
+    youtube: "https://www.youtube.com/embed/H-c5zdhf0zs",
     details: `GridAI is a real-time dashboard...`,
     pdfs: [
       { name: "Design Doc", url: "/docs/gridai_design.pdf" },
