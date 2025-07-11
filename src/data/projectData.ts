@@ -1,3 +1,5 @@
+import GridAIPoster from "../assets/GridAI_Poster.png"
+
 export interface Project {
   title: string;
   description: string;
@@ -6,6 +8,7 @@ export interface Project {
   youtube?: string;
   details?: string;
   pdfs?: { name: string; url: string }[];
+  images?: string[];
 }
 
 export const projects: Project[] = [
@@ -20,6 +23,7 @@ export const projects: Project[] = [
       { name: "Design Doc", url: "/docs/gridai_design.pdf" },
       { name: "Final Report", url: "/docs/gridai_report.pdf" },
     ],
+    images: [GridAIPoster]
   },
   // Add more projects here...
 ];
