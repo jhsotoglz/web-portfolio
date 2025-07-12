@@ -20,7 +20,7 @@ const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
   return (
     <div className="fixed inset-0 z-50 bg-black/70 flex justify-center items-center p-4">
       {/* Modal wrapper with relative positioning */}
-      <div className="relative max-w-3xl w-full">
+      <div className="relative max-w-3xl mt-16 sm:mt-0">
         
         {/* Close Button (outside modal top-right corner) */}
         <button
