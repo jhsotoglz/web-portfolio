@@ -29,8 +29,8 @@ export const projects: Project[] = [
     title: "Probabilistic Escape-Persuit Planning",
     description: "An all-in-one web app for electric grid monitoring...",
     tech: ["React", "Kafka", "Firebase", "Tailwind CSS", "TypeScript"],
-    link: undefined,
-    youtube: "https://www.youtube.com/embed/H-c5zdhf0zs",
+    link: "https://github.com/jhsotoglz/ComS4720_Project3/tree/main",
+    youtube: undefined,
     details: `GridAI is a real-time dashboard...`,
     pdfs: [
       { name: "Design Doc", url: "/docs/gridai_design.pdf" },
