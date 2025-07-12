@@ -20,7 +20,7 @@ const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
   return (
     <div className="fixed inset-0 z-50 bg-black/70 flex justify-center items-center p-4">
       {/* Modal wrapper with relative positioning */}
-      <div className="relative max-w-3xl mt-16 sm:mt-0">
+      <div className="relative max-w-3xl mt-2 sm:mt-0">
         
         {/* Close Button (outside modal top-right corner) */}
         <button
@@ -35,7 +35,8 @@ const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
 
         {/* Modal content box */}
         <div className="bg-main border border-white/10 rounded-2xl p-6 shadow-2xl 
-                        overflow-y-auto max-h-[90vh]">
+                overflow-y-auto sm:max-h-[90vh] max-h-[80vh]">
+
           {/* Title */}
           <h2 className="text-3xl font-bold mt-2 mb-4 text-white">{project.title}</h2>
 
