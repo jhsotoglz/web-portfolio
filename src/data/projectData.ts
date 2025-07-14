@@ -1,4 +1,4 @@
-import GridAIPoster from "../assets/GridAI_Poster.png"
+import GridAIPoster from "../assets/projectFiles/GridAI/GridAI_Poster.png"
 
 export interface Project {
   title: string;
@@ -27,6 +27,20 @@ export const projects: Project[] = [
   },
   {
     title: "Probabilistic Escape-Persuit Planning",
+    description: "An all-in-one web app for electric grid monitoring...",
+    tech: ["React", "Kafka", "Firebase", "Tailwind CSS", "TypeScript"],
+    link: "https://github.com/jhsotoglz/ComS4720_Project3/tree/main",
+    youtube: undefined,
+    details: `GridAI is a real-time dashboard...`,
+    pdfs: [
+      { name: "Assigment 1 Report", url: "/docs/gridai_design.pdf" },
+      { name: "Assignment 2 Report", url: "/docs/gridai_report.pdf" },
+      { name: "Assignment 3 Report", url: "/docs/gridai_report.pdf" },
+    ],
+    images: [GridAIPoster]
+  },
+  {
+    title: "CoSMiC Competition - hoster by the Cardinal Space Mining Club of ISU",
     description: "An all-in-one web app for electric grid monitoring...",
     tech: ["React", "Kafka", "Firebase", "Tailwind CSS", "TypeScript"],
     link: "https://github.com/jhsotoglz/ComS4720_Project3/tree/main",
