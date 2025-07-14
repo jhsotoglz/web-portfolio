@@ -1,4 +1,7 @@
-import GridAIPoster from "../assets/projectFiles/GridAI/GridAI_Poster.png"
+import GridAIPoster from "../assets/projectFiles/GridAI/GridAI_Poster.png";
+import ComS472_Project1 from "../assets/projectFiles/COMS472/Project1_report.pdf";
+import ComS472_Project2 from "../assets/projectFiles/COMS472/Project2_report.pdf";
+import ComS472_Project3 from "../assets/projectFiles/COMS472/Project3_report.pdf";
 
 export interface Project {
   title: string;
@@ -27,25 +30,25 @@ export const projects: Project[] = [
   },
   {
     title: "Probabilistic Escape-Persuit Planning",
-    description: "An all-in-one web app for electric grid monitoring...",
-    tech: ["React", "Kafka", "Firebase", "Tailwind CSS", "TypeScript"],
+    description: "A pursuit-evasion planning algorithm using probabilistic models and graph search...",
+    tech: ["Graph Search", "Adversarial AI", "TypeScript", "React"],
     link: "https://github.com/jhsotoglz/ComS4720_Project3/tree/main",
     youtube: undefined,
-    details: `GridAI is a real-time dashboard...`,
+    details: `Explores decision-making under uncertainty...`,
     pdfs: [
-      { name: "Assigment 1 Report", url: "/docs/gridai_design.pdf" },
-      { name: "Assignment 2 Report", url: "/docs/gridai_report.pdf" },
-      { name: "Assignment 3 Report", url: "/docs/gridai_report.pdf" },
+      { name: "Project 1 Report", url: ComS472_Project1 },
+      { name: "Project 2 Report", url: ComS472_Project2 },
+      { name: "Project 3 Report", url: ComS472_Project3 },
     ],
     images: [GridAIPoster]
   },
   {
-    title: "CoSMiC Competition - hoster by the Cardinal Space Mining Club of ISU",
-    description: "An all-in-one web app for electric grid monitoring...",
-    tech: ["React", "Kafka", "Firebase", "Tailwind CSS", "TypeScript"],
+    title: "CoSMiC Competition - hosted by the Cardinal Space Mining Club of ISU",
+    description: "Robotic mining competition focused on excavation and regolith delivery in a simulated lunar environment...",
+    tech: ["ROS2", "Python", "CAN", "Phoenix 6"],
     link: "https://github.com/jhsotoglz/ComS4720_Project3/tree/main",
     youtube: undefined,
-    details: `GridAI is a real-time dashboard...`,
+    details: `Designed and deployed autonomous and teleoperated systems for lunar mining...`,
     pdfs: [
       { name: "Design Doc", url: "/docs/gridai_design.pdf" },
       { name: "Final Report", url: "/docs/gridai_report.pdf" },
