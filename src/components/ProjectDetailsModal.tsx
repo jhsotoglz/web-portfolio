@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useLayoutEffect } from "react";
 import type { Project } from "../data/projectData";
 
 interface Props {
@@ -8,20 +8,22 @@ interface Props {
 
 const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
   // Prevent background scroll
-  useEffect(() => {
-    const originalStyle = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
+  useLayoutEffect(() => {
+    const original = document.body.style.overflow;
+    document.body.classList.add("overflow-hidden");
 
     return () => {
-      document.body.style.overflow = originalStyle; // Reset on unmount
+      document.body.classList.remove("overflow-hidden");
+      document.body.style.overflow = original;
     };
   }, []);
 
+
   return (
-    <div className="fixed inset-0 z-50 bg-black/70 flex justify-center items-center p-4">
+    <div className="fixed inset-0 z-50 bg-black/70 flex justify-center items-center p-4 touch-none">
       {/* Modal wrapper with relative positioning */}
-      <div className="relative max-w-3xl mt-2 sm:mt-0">
-        
+      <div className="relative w-full sm:w-[45vw] mx-auto mt-2 sm:mt-0">
+
         {/* Close Button (outside modal top-right corner) */}
         <button
           onClick={onClose}
@@ -35,7 +37,7 @@ const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
 
         {/* Modal content box */}
         <div className="bg-main border border-white/10 rounded-2xl p-6 shadow-2xl 
-                overflow-y-auto sm:max-h-[90vh] max-h-[80vh]">
+                overflow-y-auto sm:max-h-[90vh] sm:max-w-[50vw] max-h-[80vh]">
 
           {/* Title */}
           <h2 className="text-3xl font-bold mt-2 mb-4 text-white">{project.title}</h2>
@@ -50,7 +52,7 @@ const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
           {/* Project Images */}
           {Array.isArray(project.images) && project.images.length > 0 && (
             <div className="mb-6">
-              <h3 className="font-semibold mb-4 text-white text-center">Project Images</h3>
+              <h3 className="font-semibold mb-8 text-white text-center">Project Images</h3>
               <div className="flex flex-col items-center gap-6">
                 {project.images.map((src, idx) => (
                   <a
@@ -63,7 +65,7 @@ const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
                     <img
                       src={src}
                       alt={`Screenshot ${idx + 1}`}
-                      className="max-w-full md:max-w-md rounded-lg border border-white/20 shadow-md"
+                      className="mx-auto max-w-full md:max-w-[80%] rounded-lg border border-white/20 shadow-md mb-4"
                     />
                   </a>
                 ))}
