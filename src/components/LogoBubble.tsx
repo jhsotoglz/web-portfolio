@@ -30,7 +30,7 @@ const LogoBubble: React.FC<LogoBubbleProps> = ({ navOpen }) => {
       onClick={scrollToTop}
       title="Back to Top"
     >
-      JH
+      JS
     </div>
   );
 };
