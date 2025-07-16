@@ -19,7 +19,17 @@ export const projects: Project[] = [
     title: "GridAI: Electric Grid Management Web Platform",
     description: `Advanced web-based platform for electric grid management,
                   designed to simplify data analytics and provide seamless data interaction.`,
-    tech: ["React", "Next.JS", "Docker", "Kafka", "Firebase", "Tailwind CSS", "TypeScript"],
+    tech: [
+      "React",
+      "TypeScript",
+      "Kafka",
+      "WebSocket",
+      "Firebase",
+      "Monaco Editor",
+      "Tailwind CSS",
+      "Docker",
+      "Babel"
+    ],
     link: undefined,
     youtubeLinks: [
       { label: "Demo", url: "https://www.youtube.com/embed/H-c5zdhf0zs" }

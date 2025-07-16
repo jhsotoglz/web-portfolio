@@ -52,11 +52,10 @@ const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
             </div>
           )}
 
-
           {/* Project Images */}
           {Array.isArray(project.images) && project.images.length > 0 && (
             <div className="mb-6">
-              <h3 className="font-semibold mb-8 text-green-400 text-center">Project Images</h3>
+              <h3 className="text-xl font-bold text-green-400 text-center mb-8">Project Images</h3>
               <div className="flex flex-col items-center gap-6">
                 {project.images.map((src, idx) => (
                   <a
@@ -80,7 +79,7 @@ const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
           {/* YouTube Embeds */}
           {Array.isArray(project.youtubeLinks) && project.youtubeLinks.length > 0 && (
             <div className="mb-6 space-y-6">
-              <h3 className="font-semibold text-green-400 text-center mb-4 mt-8">Project Videos</h3>
+              <h3 className="text-xl font-bold text-green-400 text-center mb-4">Project Videos</h3>
               {project.youtubeLinks.map((video, idx) => (
                 <div key={idx} className="w-full">
                   <p className="text-white text-sm font-medium mb-2">{video.label}</p>
@@ -97,16 +96,18 @@ const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
 
           {/* PDF Downloads */}
           {Array.isArray(project.pdfs) && project.pdfs.length > 0 && (
-            <div>
-              <h3 className="font-semibold mb-2 text-white">Project Documents</h3>
-              <ul className="list-disc pl-5 text-blue-600">
+            <div className="mb-8">
+              <h3 className="text-xl font-bold text-green-400 text-center mb-4">
+                Project Documents
+              </h3>
+              <ul className="flex flex-wrap gap-4 justify-center">
                 {project.pdfs.map((pdf, idx) => (
                   <li key={idx}>
                     <a
                       href={pdf.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="underline"
+                      className="inline-block px-4 py-2 bo bg-green-400 text-black font-semibold rounded-full shadow hover:scale-110 transition duration-300"
                     >
                       {pdf.name}
                     </a>
@@ -115,6 +116,7 @@ const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
               </ul>
             </div>
           )}
+
         </div>
       </div>
     </div>
