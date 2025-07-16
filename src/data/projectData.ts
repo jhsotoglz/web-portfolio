@@ -1,4 +1,6 @@
 import GridAIPoster from "../assets/projectFiles/GridAI/GridAI_Poster.png";
+import GridAIPresentation from "../assets/projectFiles/GridAI/sdmay25-43IRP.pdf"
+import FinalReport from "../assets/projectFiles/GridAI/sdmay25-43-DD.pdf"
 import ComS472_Project1 from "../assets/projectFiles/COMS472/Project1_report.pdf";
 import ComS472_Project2 from "../assets/projectFiles/COMS472/Project2_report.pdf";
 import ComS472_Project3 from "../assets/projectFiles/COMS472/Project3_report.pdf";
@@ -59,8 +61,8 @@ export const projects: Project[] = [
               widget configurations. These routes are secured using Firebase token authentication and persist data in Firestore. 
               Real-time updates ensure seamless dashboard integration and immediate feedback when working with live telemetry data.`,
     pdfs: [
-      { name: "Design Doc", url: "/docs/gridai_design.pdf" },
-      { name: "Final Report", url: "/docs/gridai_report.pdf" },
+      { name: "IRP Presentation", url: GridAIPresentation },
+      { name: "Final Report", url: FinalReport },
     ],
     images: [GridAIPoster]
   },
