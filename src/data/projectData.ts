@@ -17,13 +17,21 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "GridAI: Electric Grid Management Web Platform",
-    description: "An all-in-one web app for electric grid monitoring...",
-    tech: ["React", "Kafka", "Firebase", "Tailwind CSS", "TypeScript"],
+    description: `Advanced web-based platform for electric grid management,
+                  designed to simplify data analytics and provide seamless data interaction.`,
+    tech: ["React", "Next.JS", "Docker", "Kafka", "Firebase", "Tailwind CSS", "TypeScript"],
     link: undefined,
     youtubeLinks: [
       { label: "Demo", url: "https://www.youtube.com/embed/H-c5zdhf0zs" }
     ],
-    details: `GridAI is a real-time dashboard...`,
+    details: `GridAI is proprietary software created at Iowa State University with over four years of continuous 
+              development to address the challenges of modern energy distribution systems. It offers solutions 
+              for predicting outages, optimizing power flow, and managing distributed energy resources (DERs), 
+              enabling operators to maintain grid stability and efficiency.
+
+              While GridAI’s backend was robust, its baseline front-end had limitations that required enhancements 
+              to meet diverse user needs. Our senior design team focused on improving existing components and 
+              developing new features to deliver a more user-friendly and efficient interface.`,
     pdfs: [
       { name: "Design Doc", url: "/docs/gridai_design.pdf" },
       { name: "Final Report", url: "/docs/gridai_report.pdf" },

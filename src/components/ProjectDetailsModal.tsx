@@ -39,19 +39,24 @@ const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
                 overflow-y-auto sm:max-h-[90vh] sm:max-w-[50vw] max-h-[80vh]">
 
           {/* Title */}
-          <h2 className="text-3xl font-bold mt-2 mb-4 text-white">{project.title}</h2>
+          <h2 className="text-3xl font-bold mt-2 mb-4 text-green-400">{project.title}</h2>
 
           {/* Details Text */}
           {project.details && (
-            <p className="text-green-400 whitespace-pre-line mb-6">
-              {project.details}
-            </p>
+            <div className="text-white mb-6">
+              {project.details.split('\n\n').map((paragraph, idx) => (
+                <p key={idx} className="mb-4">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
           )}
+
 
           {/* Project Images */}
           {Array.isArray(project.images) && project.images.length > 0 && (
             <div className="mb-6">
-              <h3 className="font-semibold mb-8 text-white text-center">Project Images</h3>
+              <h3 className="font-semibold mb-8 text-green-400 text-center">Project Images</h3>
               <div className="flex flex-col items-center gap-6">
                 {project.images.map((src, idx) => (
                   <a
@@ -75,7 +80,7 @@ const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
           {/* YouTube Embeds */}
           {Array.isArray(project.youtubeLinks) && project.youtubeLinks.length > 0 && (
             <div className="mb-6 space-y-6">
-              <h3 className="font-semibold text-white text-center mb-4 mt-8">Project Videos</h3>
+              <h3 className="font-semibold text-green-400 text-center mb-4 mt-8">Project Videos</h3>
               {project.youtubeLinks.map((video, idx) => (
                 <div key={idx} className="w-full">
                   <p className="text-white text-sm font-medium mb-2">{video.label}</p>
