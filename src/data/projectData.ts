@@ -1,6 +1,7 @@
 import GridAIPoster from "../assets/projectFiles/GridAI/GridAI_Poster.png";
 import GridAIPresentation from "../assets/projectFiles/GridAI/sdmay25-43IRP.pdf"
 import FinalReport from "../assets/projectFiles/GridAI/sdmay25-43-DD.pdf"
+import ComS4720_image from "../assets/projectFiles/COMS472/COMS4720.png"
 import ComS472_Project1 from "../assets/projectFiles/COMS472/Project1_report.pdf";
 import ComS472_Project2 from "../assets/projectFiles/COMS472/Project2_report.pdf";
 import ComS472_Project3 from "../assets/projectFiles/COMS472/Project3_report.pdf";
@@ -108,7 +109,7 @@ export const projects: Project[] = [
       { name: "Project 2 Report", url: ComS472_Project2 },
       { name: "Project 3 Report", url: ComS472_Project3 },
     ],
-    images: []
+    images: [ComS4720_image]
   },
   {
     title: "CoSMiC Competition - hosted by the Cardinal Space Mining Club of ISU",
