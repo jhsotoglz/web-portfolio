@@ -75,8 +75,8 @@ export const projects: Project[] = [
       "A* Search",
       "Monte Carlo",
       "Heuristic Design",
-      "Probabilistic Modeling",
       "EMA Estimation",
+      "Probabilistic Modeling",
       "Adversarial AI"
     ],
     link: "https://github.com/jhsotoglz/ComS4720_Project3/tree/main",
