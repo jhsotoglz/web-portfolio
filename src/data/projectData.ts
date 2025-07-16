@@ -67,12 +67,42 @@ export const projects: Project[] = [
     images: [GridAIPoster]
   },
   {
-    title: "Probabilistic Escape-Persuit Planning",
-    description: "A pursuit-evasion planning algorithm using probabilistic models and graph search...",
-    tech: ["Graph Search", "Adversarial AI", "Python", "Heuristics"],
+    title: "Probabilistic Escape-Pursuit Planning",
+    description: "Multi-agent grid-based planning system that simulates intelligent pursuit and evasion under stochastic movement conditions.",
+    tech: [
+      "Python",
+      "A* Search",
+      "Monte Carlo Simulation",
+      "Heuristic Design",
+      "Probabilistic Modeling",
+      "EMA Estimation",
+      "Adversarial AI"
+    ],
     link: "https://github.com/jhsotoglz/ComS4720_Project3/tree/main",
     youtubeLinks: undefined,
-    details: `Explores decision-making under uncertainty...`,
+    details: `Probabilistic Escape-Pursuit Planning was the final project in a 3-part AI path planning series for COM S 4720 
+              (Principles of Artificial Intelligence) at Iowa State University. The task simulated a competitive multi-agent environment 
+              where three agents had to pursue their targets and evade pursuers on a shared grid with static obstacles and probabilistic 
+              movement uncertainty.\n\n
+
+              Each student’s planner agent competed head-to-head. I developed a rotation-aware agent that earned first place, outperforming 
+              all others in both pursuit efficiency and evasion, and achieving the highest score in the class playoff.\n\n
+
+              The agent combines A* pathfinding with intelligent adaptation to unpredictable movement, where actions may randomly rotate 
+              left, right, or stay on course. I implemented a hybrid estimator using exponential moving averages (EMAs) and a sliding window 
+              to track rotation probabilities and inform real-time decisions.\n\n
+
+              The agent dynamically switches between three modes:\n\n
+
+              - Offensive: Pursues the target with pathfinding and noise correction.\n\n
+              - Defensive: Escapes threats while maximizing mobility.\n\n
+              - Normal: Maintains central positioning for flexibility.\n\n
+
+              A heuristic scoring system rewards center control, penalizes corners and dead ends, and evaluates all move variants for 
+              safety and effectiveness.\n\n
+
+              Tested across 100+ grid environments, the planner demonstrated strong adaptability and performance under uncertainty. 
+              It was built entirely in Python using NumPy and standard libraries, with an emphasis on efficient, self-contained AI logic.`,
     pdfs: [
       { name: "Project 1 Report", url: ComS472_Project1 },
       { name: "Project 2 Report", url: ComS472_Project2 },
