@@ -31,7 +31,7 @@ export const projects: Project[] = [
   {
     title: "Probabilistic Escape-Persuit Planning",
     description: "A pursuit-evasion planning algorithm using probabilistic models and graph search...",
-    tech: ["Graph Search", "Adversarial AI", "TypeScript", "React"],
+    tech: ["Graph Search", "Adversarial AI", "Phyton", "Heuristics"],
     link: "https://github.com/jhsotoglz/ComS4720_Project3/tree/main",
     youtube: undefined,
     details: `Explores decision-making under uncertainty...`,
@@ -40,7 +40,7 @@ export const projects: Project[] = [
       { name: "Project 2 Report", url: ComS472_Project2 },
       { name: "Project 3 Report", url: ComS472_Project3 },
     ],
-    images: [GridAIPoster]
+    images: []
   },
   {
     title: "CoSMiC Competition - hosted by the Cardinal Space Mining Club of ISU",
