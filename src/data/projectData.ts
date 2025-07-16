@@ -16,7 +16,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "GridAI: Electric Grid Management Web Application",
+    title: "GridAI: Electric Grid Management Web Platform",
     description: "An all-in-one web app for electric grid monitoring...",
     tech: ["React", "Kafka", "Firebase", "Tailwind CSS", "TypeScript"],
     link: undefined,
