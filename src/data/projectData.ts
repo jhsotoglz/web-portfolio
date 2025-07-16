@@ -24,14 +24,31 @@ export const projects: Project[] = [
     youtubeLinks: [
       { label: "Demo", url: "https://www.youtube.com/embed/H-c5zdhf0zs" }
     ],
-    details: `GridAI is proprietary software created at Iowa State University with over four years of continuous 
-              development to address the challenges of modern energy distribution systems. It offers solutions 
-              for predicting outages, optimizing power flow, and managing distributed energy resources (DERs), 
-              enabling operators to maintain grid stability and efficiency.
-
-              While GridAI’s backend was robust, its baseline front-end had limitations that required enhancements 
-              to meet diverse user needs. Our senior design team focused on improving existing components and 
-              developing new features to deliver a more user-friendly and efficient interface.`,
+    details: `GridAI is a proprietary platform developed at Iowa State University to address challenges in modern energy distribution 
+              systems. It provides solutions for predicting outages, optimizing power flow, and managing distributed energy resources 
+              (DERs), enabling operators to maintain grid stability and efficiency.\n\n
+    
+              While GridAI’s backend was robust, its baseline front-end had limitations that required enhancements to meet diverse user 
+              needs. Our senior design team focused on improving existing components and developing new features to deliver a more 
+              user-friendly and efficient interface.\n\n
+              
+              Within the team, I was responsible for designing and implementing a real-time widget system with a built-in code editor. 
+              This system allows users to observe live electric grid data and customize widgets using code or settings to suit their 
+              specific needs.\n\n
+              
+              I developed a comprehensive Widget Editor with a four-quadrant layout using React and TypeScript, enabling live code 
+              editing with the Monaco Editor and real-time JSX previews powered by Babel. Users can modify widget templates, controller 
+              scripts, and metadata such as title, measurement type, and Kafka node key.\n\n
+              
+              I also built and maintained various components, including the widget list manager, widget creation forms with predefined 
+              templates, telemetry subscription handlers, and error-isolated rendering using React boundaries. On the backend, I 
+              contributed to the Kafka-based real-time telemetry system, which filters, transforms, and emits live data through 
+              WebSocket connections.\n\n
+              
+              The system implements full CRUD API endpoints for widget management, allowing users to create, read, update, and delete 
+              widget configurations. These routes are secured using Firebase token authentication and persist data in Firestore. 
+              Real-time updates ensure seamless dashboard integration and immediate feedback when working with live telemetry data.
+`,
     pdfs: [
       { name: "Design Doc", url: "/docs/gridai_design.pdf" },
       { name: "Final Report", url: "/docs/gridai_report.pdf" },
