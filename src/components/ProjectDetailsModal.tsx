@@ -18,7 +18,6 @@ const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
     };
   }, []);
 
-
   return (
     <div className="fixed inset-0 z-50 bg-black/70 flex justify-center items-center p-4 touch-none">
       {/* Modal wrapper with relative positioning */}
@@ -73,15 +72,21 @@ const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
             </div>
           )}
 
-          {/* YouTube Embed */}
-          {project.youtube && (
-            <div className="mb-6">
-              <iframe
-                src={project.youtube}
-                title="YouTube Demo"
-                className="w-full aspect-video rounded-lg"
-                allowFullScreen
-              ></iframe>
+          {/* YouTube Embeds */}
+          {Array.isArray(project.youtubeLinks) && project.youtubeLinks.length > 0 && (
+            <div className="mb-6 space-y-6">
+              <h3 className="font-semibold text-white text-center mb-4 mt-8">Project Videos</h3>
+              {project.youtubeLinks.map((video, idx) => (
+                <div key={idx} className="w-full">
+                  <p className="text-white text-sm font-medium mb-2">{video.label}</p>
+                  <iframe
+                    src={video.url}
+                    title={video.label}
+                    className="w-full aspect-video rounded-lg"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              ))}
             </div>
           )}
 

@@ -8,7 +8,7 @@ export interface Project {
   description: string;
   tech: string[];
   link?: string;
-  youtube?: string;
+  youtubeLinks?: { label: string; url: string }[];
   details?: string;
   pdfs?: { name: string; url: string }[];
   images?: string[];
@@ -20,7 +20,9 @@ export const projects: Project[] = [
     description: "An all-in-one web app for electric grid monitoring...",
     tech: ["React", "Kafka", "Firebase", "Tailwind CSS", "TypeScript"],
     link: undefined,
-    youtube: "https://www.youtube.com/embed/H-c5zdhf0zs",
+    youtubeLinks: [
+      { label: "Demo", url: "https://www.youtube.com/embed/H-c5zdhf0zs" }
+    ],
     details: `GridAI is a real-time dashboard...`,
     pdfs: [
       { name: "Design Doc", url: "/docs/gridai_design.pdf" },
@@ -31,9 +33,9 @@ export const projects: Project[] = [
   {
     title: "Probabilistic Escape-Persuit Planning",
     description: "A pursuit-evasion planning algorithm using probabilistic models and graph search...",
-    tech: ["Graph Search", "Adversarial AI", "Phyton", "Heuristics"],
+    tech: ["Graph Search", "Adversarial AI", "Python", "Heuristics"],
     link: "https://github.com/jhsotoglz/ComS4720_Project3/tree/main",
-    youtube: undefined,
+    youtubeLinks: undefined,
     details: `Explores decision-making under uncertainty...`,
     pdfs: [
       { name: "Project 1 Report", url: ComS472_Project1 },
@@ -46,13 +48,17 @@ export const projects: Project[] = [
     title: "CoSMiC Competition - hosted by the Cardinal Space Mining Club of ISU",
     description: "Robotic mining competition focused on excavation and regolith delivery in a simulated lunar environment...",
     tech: ["ROS2", "Python", "CAN", "Phoenix 6"],
-    link: "https://github.com/jhsotoglz/ComS4720_Project3/tree/main",
-    youtube: undefined,
+    link: undefined,
+    youtubeLinks: [
+      { label: "Day 1 - CoSMiC Live", url: "https://www.youtube.com/embed/lsF2a_niRuA" },
+      { label: "Day 2 - CoSMiC Live", url: "https://www.youtube.com/embed/ao0e3zGLE_U" },
+      { label: "Day 3 - CoSMiC Live", url: "https://www.youtube.com/embed/plyCCqee_GA" },
+    ],
     details: `Designed and deployed autonomous and teleoperated systems for lunar mining...`,
     pdfs: [
       { name: "Design Doc", url: "/docs/gridai_design.pdf" },
       { name: "Final Report", url: "/docs/gridai_report.pdf" },
     ],
-    images: [GridAIPoster]
-  },
+    images: []
+  }
 ];

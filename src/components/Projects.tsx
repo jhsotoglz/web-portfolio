@@ -54,16 +54,16 @@ const Projects = () => {
                     </span>
                   </a>
                 )}
-                {project.youtube && (
+                {project.youtubeLinks && project.youtubeLinks.length > 0 && (
                   <a
-                    href={project.youtube}
+                    href={project.youtubeLinks[0].url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 rounded-full border border-white text-white font-semibold shadow-md hover:bg-white 
-                    hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                             hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-lg"
                   >
                     <span className="flex items-center gap-2">
-                      <FaYoutube className="text-red-500" /> Watch
+                      <FaYoutube className="text-red-500" /> {"Watch"}
                     </span>
                   </a>
                 )}
