@@ -47,8 +47,7 @@ export const projects: Project[] = [
               
               The system implements full CRUD API endpoints for widget management, allowing users to create, read, update, and delete 
               widget configurations. These routes are secured using Firebase token authentication and persist data in Firestore. 
-              Real-time updates ensure seamless dashboard integration and immediate feedback when working with live telemetry data.
-`,
+              Real-time updates ensure seamless dashboard integration and immediate feedback when working with live telemetry data.`,
     pdfs: [
       { name: "Design Doc", url: "/docs/gridai_design.pdf" },
       { name: "Final Report", url: "/docs/gridai_report.pdf" },
