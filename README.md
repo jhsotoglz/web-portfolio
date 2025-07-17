@@ -2,7 +2,7 @@
 
 Welcome to my personal web portfolio! This site showcases my background, skills, and projects in software engineering, embedded systems, robotics, and web development.
 
-**Live Website**: [https://jesus-soto.github.io/web-portfolio](https://jesus-soto.github.io/web-portfolio)  
+**Live Website**: [https://jhsotoglz.github.io/web-portfolio/] 
  **Contact**: jhsotoglz@gmail.com
 
 ---
