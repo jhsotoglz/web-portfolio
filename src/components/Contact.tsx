@@ -1,3 +1,5 @@
+import resume from "../assets/resume/Resume2025-Updated.pdf"
+
 const Contact = () => {
   return (
     <section
@@ -21,7 +23,7 @@ const Contact = () => {
           </a>
 
           <a
-            href="/resume.pdf"
+            href={resume}
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full border border-green-400 text-green-400 font-bold shadow-md hover:bg-green-400 hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-lg"
