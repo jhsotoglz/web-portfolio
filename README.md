@@ -1,54 +1,75 @@
-# React + TypeScript + Vite
+# Jesus Soto's Web Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal web portfolio! This site showcases my background, skills, and projects in software engineering, embedded systems, robotics, and web development.
 
-Currently, two official plugins are available:
+**Live Website**: [https://jesus-soto.github.io/web-portfolio](https://jesus-soto.github.io/web-portfolio)  
+ **Contact**: jhsotoglz@gmail.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This portfolio was built to highlight:
+- My technical skills and personal projects
+- Experiences from internships and research
+- Involvement in robotics competitions and club leadership
+- My design, frontend, and responsive development abilities
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Whether you're a recruiter, classmate, or fellow engineer, feel free to explore the site and reach out!
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Built With
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **React** + **TypeScript**
+- **Vite** for lightning-fast builds
+- **TailwindCSS** for styling
+- **Responsive Design** (mobile & desktop)
+- **Modular Component Structure** for easy scalability
+
+---
+
+## Features
+
+- Project details with modal previews and images
+- Mobile-first responsive layout
+- Organized folder structure for scalability
+- Private project reports excluded in public release
+- Smooth animations and clean UI for a professional look
+
+---
+
+## Project Structure
+
+src/
+├── assets/ # Images and static files
+├── components/ # Reusable UI components
+├── data/ # Project information in TS
+├── App.tsx # Main component
+└── main.tsx # Entry point
+
+
+---
+
+## Versioning
+
+This is **Release v1.0** of the portfolio.  
+Future improvements may include:
+- Dynamic project filtering
+- Blog or article section
+- Project detail pages
+
+---
+
+## License
+
+This project is open-source under the [MIT License](LICENSE).  
+You are free to use the structure or styling as inspiration, but please credit appropriately.
+
+---
+
+## Acknowledgments
+
+- Inspired by modern developer portfolios and UI/UX design trends.
+
+---
