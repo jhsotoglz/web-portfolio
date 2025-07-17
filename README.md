@@ -39,18 +39,6 @@ Whether you're a recruiter, classmate, or fellow engineer, feel free to explore 
 
 ---
 
-## Project Structure
-
-src/
-├── assets/ # Images and static files
-├── components/ # Reusable UI components
-├── data/ # Project information in TS
-├── App.tsx # Main component
-└── main.tsx # Entry point
-
-
----
-
 ## Versioning
 
 This is **Release v1.0** of the portfolio.  
