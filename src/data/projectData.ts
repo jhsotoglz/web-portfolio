@@ -62,8 +62,8 @@ export const projects: Project[] = [
               contributed to the Kafka-based real-time telemetry system, which filters, transforms, and emits live data through 
               WebSocket connections.\n\n
               
-              The system implements full CRUD API endpoints for widget management, allowing users to create, read, update, and delete 
-              widget configurations. These routes are secured using Firebase token authentication and persist data in Firestore. 
+              The system implements a full set of RESTful API endpoints for widget management, allowing users to create, read, update, 
+              and delete widget configurations. These routes are secured using Firebase token authentication and persist data in Firestore. 
               Real-time updates ensure seamless dashboard integration and immediate feedback when working with live telemetry data.`,
     pdfs: [
       { name: "IRP Presentation", url: GridAIPresentation },
@@ -117,7 +117,8 @@ export const projects: Project[] = [
   },
   {
     title: "CoSMiC Competition – hosted by the Cardinal Space Mining Club at ISU",
-    description: "A student-led Lunabotics-style robotics competition focused on lunar regolith excavation and delivery, featuring teams from across the U.S.",
+    description: `A student-led Lunabotics-style robotics competition focused on lunar regolith excavation and delivery, 
+                  featuring teams from across the U.S.`,
     tech: ["ROS 2", "Python", "CAN Bus", "Phoenix 6", "Teleop Control", "Autonomous Navigation"],
     link: undefined,
     youtubeLinks: [
@@ -130,7 +131,8 @@ export const projects: Project[] = [
               Lunabotics-style competition.\n\n
               
               Hosted from May 21–24, the event brought together student teams from across the U.S. to compete with autonomous and 
-              teleoperated robots in a simulated lunar arena, with goals including regolith excavation, delivery, and autonomous navigation.\n\n
+              teleoperated robots in a simulated lunar arena, with goals including regolith excavation, delivery, and 
+              autonomous navigation.\n\n
               
               I was part of the Controls Team and Motors Subteam, where I helped implement and test the robot's drivetrain system using 
               Phoenix 6 motor controllers, CAN bus communication, and ROS 2. We integrated joystick-based teleoperation 
@@ -145,5 +147,35 @@ export const projects: Project[] = [
               systems integration.`,
     pdfs: [],
     images: [LanceBot, COSMIC_Photo1, COSMIC_Photo2, COSMIC_Photo3]
+  },
+  {
+    title: "Kitchen Mingle – Android Recipe Finder App",
+    description: "A full-stack mobile app that allows users to search for, save, and manage recipes based on ingredients. Built collaboratively as part of a semester-long team project for COM S 309 (Software Development Practices) at Iowa State University.",
+    tech: ["Java", "Android", "Spring Boot", "MySQL", "REST API", "Agile", "CI/CD"],
+    link: "https://github.com/jhsotoglz/KitchenMingle_AndroidApp",
+    youtubeLinks: [],
+    details: `As part of the Kitchen Mingle team, I worked primarily on the backend, designing and implementing RESTful APIs 
+              using Spring Boot and structuring the MySQL database to store recipes, ingredients, and user data. I also supported 
+              the frontend team by integrating API endpoints with the Android interface and helping debug UI-to-backend communication issues.\n\n
+
+              This project was developed as part of COM S 309: Software Development Practices, a course designed to simulate 
+              real-world industry environments. The class emphasized agile collaboration, requirement gathering, and end-to-end software 
+              delivery.\n\n
+
+              Key features:\n\n
+              - Ingredient-based recipe search using external APIs\n\n
+              - User authentication, recipe saving, and persistent storage\n\n
+              - MySQL schema design with proper relational mapping and query optimization\n\n
+              - Client-server architecture following REST principles\n\n
+              - Weekly scrum meetings, peer accountability, and formal documentation of the software lifecycle (requirements, 
+                design, testing, and ethics)\n\n
+
+              The project strengthened my skills in team-based development, communication across roles, and managing both backend 
+              logic and frontend integration.`,
+    pdfs: [],
+    images: []
   }
+
+
+
 ];
