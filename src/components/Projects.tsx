@@ -6,6 +6,7 @@ import ProjectDetailsModal from "./ProjectDetailsModal";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [expandedTags, setExpandedTags] = useState<{ [title: string]: boolean }>({});
 
   return (
     <section
@@ -29,15 +30,33 @@ const Projects = () => {
 
               <p className="text-white/80 mb-4">{project.description}</p>
 
+              {/* Tag List with Expand/Collapse */}
               <div className="flex flex-wrap gap-2 text-sm mb-4">
-                {project.tech.map((tech, i) => (
-                  <span
-                    key={i}
-                    className="font-semibold px-2 py-1 rounded-full border border-green-400 text-green-400"
+                {(expandedTags[project.title] ? project.tech : project.tech.slice(0, 5)).map(
+                  (tech, i) => (
+                    <span
+                      key={i}
+                      className="font-semibold px-2 py-1 rounded-full border border-green-400 text-green-400"
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
+                {project.tech.length > 5 && (
+                  <button
+                    onClick={() =>
+                      setExpandedTags((prev) => ({
+                        ...prev,
+                        [project.title]: !prev[project.title],
+                      }))
+                    }
+                    className="font-semibold px-2 py-1 rounded-full border border-white text-white hover:bg-white hover:text-black transition"
                   >
-                    {tech}
-                  </span>
-                ))}
+                    {expandedTags[project.title]
+                      ? "Show less"
+                      : `+${project.tech.length - 5} more`}
+                  </button>
+                )}
               </div>
 
               <div className="flex flex-wrap gap-4 mt-4">

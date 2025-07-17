@@ -5,6 +5,10 @@ import ComS4720_image from "../assets/projectFiles/COMS472/COMS4720.jpg"
 import ComS472_Project1 from "../assets/projectFiles/COMS472/Project1_report.pdf";
 import ComS472_Project2 from "../assets/projectFiles/COMS472/Project2_report.pdf";
 import ComS472_Project3 from "../assets/projectFiles/COMS472/Project3_report.pdf";
+import LanceBot from "../assets/projectFiles/CSMC/Lance.png"
+import COSMIC_Photo1 from "../assets/projectFiles/CSMC/Competition1.png"
+import COSMIC_Photo2 from "../assets/projectFiles/CSMC/Competition2.png"
+import COSMIC_Photo3 from "../assets/projectFiles/CSMC/Competition3.png"
 
 export interface Project {
   title: string;
@@ -26,12 +30,12 @@ export const projects: Project[] = [
       "React",
       "TypeScript",
       "Kafka",
-      "WebSocket",
+      "Docker",
       "Firebase",
+      "Babel",
       "Monaco Editor",
       "Tailwind CSS",
-      "Docker",
-      "Babel"
+      "WebSocket",
     ],
     link: undefined,
     youtubeLinks: [
@@ -71,13 +75,13 @@ export const projects: Project[] = [
     title: "Probabilistic Escape-Pursuit Planning",
     description: "Multi-agent grid-based planning system that simulates intelligent pursuit and evasion under stochastic movement conditions.",
     tech: [
-      "Python",
       "A* Search",
-      "Monte Carlo",
+      "Monte Carlo Simulation",
+      "Python",
       "Heuristic Design",
       "EMA Estimation",
+      "Adversarial AI",
       "Probabilistic Modeling",
-      "Adversarial AI"
     ],
     link: "https://github.com/jhsotoglz/ComS4720_Project3/tree/main",
     youtubeLinks: undefined,
@@ -112,20 +116,34 @@ export const projects: Project[] = [
     images: [ComS4720_image]
   },
   {
-    title: "CoSMiC Competition - hosted by the Cardinal Space Mining Club of ISU",
-    description: "Robotic mining competition focused on excavation and regolith delivery in a simulated lunar environment...",
-    tech: ["ROS2", "Python", "CAN", "Phoenix 6"],
+    title: "CoSMiC Competition – hosted by the Cardinal Space Mining Club at ISU",
+    description: "A student-led Lunabotics-style robotics competition focused on lunar regolith excavation and delivery, featuring teams from across the U.S.",
+    tech: ["ROS 2", "Python", "CAN Bus", "Phoenix 6", "Teleop Control", "Autonomous Navigation"],
     link: undefined,
     youtubeLinks: [
       { label: "Day 1 - CoSMiC Live", url: "https://www.youtube.com/embed/lsF2a_niRuA" },
       { label: "Day 2 - CoSMiC Live", url: "https://www.youtube.com/embed/ao0e3zGLE_U" },
-      { label: "Day 3 - CoSMiC Live", url: "https://www.youtube.com/embed/plyCCqee_GA" },
+      { label: "Day 3 - CoSMiC Live", url: "https://www.youtube.com/embed/plyCCqee_GA" }
     ],
-    details: `Designed and deployed autonomous and teleoperated systems for lunar mining...`,
-    pdfs: [
-      { name: "Design Doc", url: "/docs/gridai_design.pdf" },
-      { name: "Final Report", url: "/docs/gridai_report.pdf" },
-    ],
-    images: []
+    details: `After our team didn’t qualify for NASA’s official Lunabotics competition, the Cardinal Space Mining Club at 
+              Iowa State University launched our own event: the Collegiate Space Mining Competition (CoSMiC), a student-run 
+              Lunabotics-style competition.\n\n
+              
+              Hosted from May 21–24, the event brought together student teams from across the U.S. to compete with autonomous and 
+              teleoperated robots in a simulated lunar arena, with goals including regolith excavation, delivery, and autonomous navigation.\n\n
+              
+              I was part of the Controls Team and Motors Subteam, where I helped implement and test the robot's drivetrain system using 
+              Phoenix 6 motor controllers, CAN bus communication, and ROS 2. We integrated joystick-based teleoperation 
+              and began implementing autonomous mobility for regolith delivery tasks.\n\n
+              
+              In addition, I served as the club’s Safety Officer, where I ensured EH&S compliance, coordinated personal protective 
+              equipment (PPE) protocols, and helped establish safety procedures for battery handling, pit operations, and the Lunar Soil 
+              Simulant Arena.\n\n
+              
+              The event was sponsored by the Iowa Space Grant Consortium (ISGC) and featured three days of live-streamed competition. 
+              CoSMiC became a national platform for showcasing engineering talent and a powerful learning experience in robotics and 
+              systems integration.`,
+    pdfs: [],
+    images: [LanceBot, COSMIC_Photo1, COSMIC_Photo2, COSMIC_Photo3]
   }
 ];
