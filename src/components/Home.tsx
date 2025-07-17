@@ -18,14 +18,16 @@ const Home = () => {
 
           {/* Profile Picture */}
           <div className="mb-8 bg-gradient-to-tr from-green-200 via-green-400 to-gray-800 p-1 rounded-full w-32 h-32 sm:w-40 sm:h-40 shadow-xl">
-  <div className="w-full h-full rounded-full overflow-hidden">
-    <img
-      src={profilePicture}
-      alt="Profile"
-      className="w-full h-full object-cover"
-    />
-  </div>
-</div>
+            <div className="w-full h-full rounded-full overflow-hidden">
+              <img
+                src={profilePicture}
+                alt="Profile"
+                width={320}
+                height={320}
+                className="w-full h-full object-cover [image-rendering:auto]"
+              />
+            </div>
+          </div>
 
 
           {/* Headline with name */}
