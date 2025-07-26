@@ -36,12 +36,13 @@ const About = () => {
                 </p>
 
                 <p className="text-lg leading-relaxed mb-4">
-                    My academic background and personal projects have introduced me to <strong>real-time systems</strong> and <strong>robotics</strong>, areas I’m genuinely passionate about and continue to explore.
+                    Before diving into software, I earned a degree in <strong>Diesel Technology</strong> and worked as a certified diesel technician. This gave me a strong foundation in troubleshooting, mechanical systems, and real-world problem solving. These are skills that I now bring to every engineering challenge.
                 </p>
 
                 <p className="text-lg leading-relaxed">
-                    I'm eager to keep learning, contribute to <strong>meaningful projects</strong>, and grow within a team that values <strong>collaboration</strong>, <strong>innovation</strong>, and <strong>real-world impact</strong>.
+                    My background spans both digital and physical systems, from embedded robotics and real-time platforms to full-stack web development. I'm eager to contribute to <strong>meaningful projects</strong> and grow in teams that value <strong>collaboration</strong>, <strong>innovation</strong>, and <strong>real-world impact</strong>.
                 </p>
+
 
 
                 <h2 className="inline-block px-6 py-2 text-green-400 text-2xl font-semibold uppercase tracking-wide rounded-full mt-10 mb-6">
