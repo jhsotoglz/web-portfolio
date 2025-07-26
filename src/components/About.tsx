@@ -3,17 +3,12 @@ import {
   SiTypescript,
   SiJavascript,
   SiNodedotjs,
-  SiFirebase,
-  SiTailwindcss,
   SiDocker,
   SiPython,
   SiCplusplus,
-  SiFlask,
   SiMysql,
-  SiGnubash,
   SiGit,
-  SiGithub,
-  SiLinux,
+  SiMongodb,
 } from "react-icons/si";
 
 const About = () => {
@@ -24,15 +19,10 @@ const About = () => {
     { Icon: SiJavascript, name: "JavaScript", color: "#F7DF1E" },
     { Icon: SiReact, name: "React", color: "#61DAFB" },
     { Icon: SiNodedotjs, name: "Node.js", color: "#339933" },
-    { Icon: SiFlask, name: "Flask", color: "#000000" },
-    { Icon: SiFirebase, name: "Firebase", color: "#FFCA28" },
     { Icon: SiMysql, name: "MySQL", color: "#4479A1" },
+    { Icon: SiMongodb, name: "MongoDB", color: "#47A248" },
     { Icon: SiDocker, name: "Docker", color: "#2496ED" },
     { Icon: SiGit, name: "Git", color: "#F05032" },
-    { Icon: SiGithub, name: "GitHub", color: "#181717" },
-    { Icon: SiLinux, name: "Linux", color: "#FCC624" },
-    { Icon: SiGnubash, name: "Bash", color: "#4EAA25" },
-    { Icon: SiTailwindcss, name: "Tailwind CSS", color: "#38BDF8" },
   ];
 
   return (
