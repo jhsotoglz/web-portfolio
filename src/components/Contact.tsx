@@ -1,4 +1,4 @@
-import resume from "../assets/resume/Resume2025-Updated.pdf"
+import resume from "../assets/resume/Resume2025.pdf"
 
 const Contact = () => {
   return (
