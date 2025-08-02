@@ -189,30 +189,27 @@ export const projects: Project[] = [
     ],
     link: "https://github.com/jhsotoglz/face_security_system",
     youtubeLinks: [],
-    details: `Face Security File System is a work-in-progress command-line application designed to deepen my understanding of the Python 
+    details: `Face Security File System is a work-in-progress command-line application created to deepen my understanding of the Python 
             programming language and its capabilities in computer vision, cryptography, and system design.\n\n
 
             The tool enables users to register with a facial image, log in using real-time webcam recognition, and securely 
-            encrypt or decrypt personal files. It uses OpenCV for camera input, the face_recognition library for biometric 
+            encrypt or decrypt personal files. It uses OpenCV for video capture, the face_recognition library for biometric 
             verification, and Python’s cryptography package to perform symmetric file encryption using Fernet.\n\n
 
-            Key features implemented so far include:\n\n
+            Key features implemented so far:\n
             - Face-based user registration and encoding\n
-            - Real-time facial recognition login flow\n
+            - Real-time facial recognition login\n
             - Secure file encryption and decryption\n
             - Automatic deletion of original or encrypted files upon conversion\n
-            - CLI interface for quick testing and local file protection\n\n
+            - CLI interface for local testing and file protection\n\n
 
-            This project began as a personal initiative to experiment with biometric access control and real-world cryptographic 
-            applications. It assumes a trusted local environment and currently uses a single shared secret key for simplicity.\n\n
-
-            Future development will focus on:\n
+            Planned future improvements:\n
             - Per-user key handling for improved security\n
             - GUI interface using Tkinter or PyQt\n
             - Gesture-based controls for interaction\n
             - Key lifecycle management and activity logging\n\n
 
-            Overall, this project serves as a practical playground to build hands-on experience with Python's ecosystem and to push 
+            This project serves as a practical way to build hands-on experience with Python's ecosystem and push 
             beyond traditional scripting into applied security and interactive user interfaces.`,
     pdfs: [],
     images: []
