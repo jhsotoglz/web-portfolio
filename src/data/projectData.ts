@@ -174,8 +174,44 @@ export const projects: Project[] = [
               logic and frontend integration.`,
     pdfs: [],
     images: []
+  },
+  {
+    title: "Face Security File System",
+    description: "A facial recognition-based CLI tool that protects personal files through biometric access and symmetric encryption.",
+    tech: [
+      "Python",
+      "OpenCV",
+      "face_recognition",
+      "Cryptography",
+      "Fernet",
+      "CLI",
+      "NumPy"
+    ],
+    link: "https://github.com/jhsotoglz/face_security_system",
+    youtubeLinks: [],
+    details: `Face Security File System is a privacy-focused command-line application that uses facial recognition to control access 
+            to encrypted files. Built in Python, it combines OpenCV for real-time webcam capture, the face_recognition library for 
+            biometric identity verification, and the cryptography package for symmetric file encryption with Fernet.\n\n
+
+            Users register with their facial image, which is encoded and stored locally. Once registered, users can log in by 
+            presenting their face, and upon successful match, gain access to encrypt or decrypt personal files.\n\n
+
+            Key features include:\n\n
+            - Facial image capture and encoding per user\n
+            - Real-time facial recognition for user authentication\n
+            - Secure file encryption/decryption using Fernet\n
+            - Simple CLI interface with support for Ubuntu/Linux\n
+            - Auto-generation and use of a shared secret key (initial MVP approach)\n\n
+
+            I designed the project to explore biometric authentication and local data protection. The encryption process deletes 
+            the original file after creating an encrypted copy, and vice versa for decryption.\n\n
+
+            Planned future improvements include per-user key management, GUI support (Tkinter or PyQt), gesture-based controls, 
+            access logs, and more advanced key lifecycle handling for real-world use cases.\n\n
+
+            This project demonstrates practical knowledge in computer vision, applied cryptography, and CLI tool development while 
+            prioritizing modularity and expandability for future features.`,
+    pdfs: [],
+    images: []
   }
-
-
-
 ];
