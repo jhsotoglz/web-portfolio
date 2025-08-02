@@ -189,28 +189,31 @@ export const projects: Project[] = [
     ],
     link: "https://github.com/jhsotoglz/face_security_system",
     youtubeLinks: [],
-    details: `Face Security File System is a privacy-focused command-line application that uses facial recognition to control access 
-            to encrypted files. Built in Python, it combines OpenCV for real-time webcam capture, the face_recognition library for 
-            biometric identity verification, and the cryptography package for symmetric file encryption with Fernet.\n\n
+    details: `Face Security File System is a work-in-progress command-line application designed to deepen my understanding of the Python 
+            programming language and its capabilities in computer vision, cryptography, and system design.\n\n
 
-            Users register with their facial image, which is encoded and stored locally. Once registered, users can log in by 
-            presenting their face, and upon successful match, gain access to encrypt or decrypt personal files.\n\n
+            The tool enables users to register with a facial image, log in using real-time webcam recognition, and securely 
+            encrypt or decrypt personal files. It uses OpenCV for camera input, the face_recognition library for biometric 
+            verification, and Python’s cryptography package to perform symmetric file encryption using Fernet.\n\n
 
-            Key features include:\n\n
-            - Facial image capture and encoding per user\n
-            - Real-time facial recognition for user authentication\n
-            - Secure file encryption/decryption using Fernet\n
-            - Simple CLI interface with support for Ubuntu/Linux\n
-            - Auto-generation and use of a shared secret key (initial MVP approach)\n\n
+            Key features implemented so far include:\n\n
+            - Face-based user registration and encoding\n
+            - Real-time facial recognition login flow\n
+            - Secure file encryption and decryption\n
+            - Automatic deletion of original or encrypted files upon conversion\n
+            - CLI interface for quick testing and local file protection\n\n
 
-            I designed the project to explore biometric authentication and local data protection. The encryption process deletes 
-            the original file after creating an encrypted copy, and vice versa for decryption.\n\n
+            This project began as a personal initiative to experiment with biometric access control and real-world cryptographic 
+            applications. It assumes a trusted local environment and currently uses a single shared secret key for simplicity.\n\n
 
-            Planned future improvements include per-user key management, GUI support (Tkinter or PyQt), gesture-based controls, 
-            access logs, and more advanced key lifecycle handling for real-world use cases.\n\n
+            Future development will focus on:\n
+            - Per-user key handling for improved security\n
+            - GUI interface using Tkinter or PyQt\n
+            - Gesture-based controls for interaction\n
+            - Key lifecycle management and activity logging\n\n
 
-            This project demonstrates practical knowledge in computer vision, applied cryptography, and CLI tool development while 
-            prioritizing modularity and expandability for future features.`,
+            Overall, this project serves as a practical playground to build hands-on experience with Python's ecosystem and to push 
+            beyond traditional scripting into applied security and interactive user interfaces.`,
     pdfs: [],
     images: []
   }
