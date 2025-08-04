@@ -72,6 +72,18 @@ export const projects: Project[] = [
     images: [GridAIPoster]
   },
   {
+    title: "Learning Data Structures and Algorithms",
+    description: "A series of videos explaining data structures and algorithms for the Hispanic community.",
+    tech: [
+      "Python",
+    ],
+    link: "",
+    youtubeLinks: [],
+    details: ``,
+    pdfs: [],
+    images: []
+  },
+  {
     title: "Probabilistic Escape-Pursuit Planning",
     description: "Multi-agent grid-based planning system that simulates intelligent pursuit and evasion under stochastic movement conditions.",
     tech: [
