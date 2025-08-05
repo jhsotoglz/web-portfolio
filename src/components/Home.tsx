@@ -32,10 +32,10 @@ const Home = () => {
 
           {/* Headline with name */}
           <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight">
-            Hi, I'm Jesus Soto
+            ¡Hola, soy Jesús Soto!
             <br />
             <span className="bg-clip-text text-3xl text-transparent bg-gradient-to-r from-gray-400 to-green-500">
-              Software Engineer passionate about AI and Robotics
+              Aprendamos juntos a resolver problemas de programación paso a paso.
             </span>
           </h1>
 
