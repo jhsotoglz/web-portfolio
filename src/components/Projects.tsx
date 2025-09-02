@@ -1,4 +1,5 @@
-import { FaGithub, FaYoutube } from "react-icons/fa";
+// src/components/Projects.tsx
+import { FaGithub, FaYoutube, FaExternalLinkAlt } from "react-icons/fa";
 import { useState } from "react";
 import type { Project } from "../data/projectData";
 import { projects } from "../data/projectData";
@@ -59,38 +60,65 @@ const Projects = () => {
                 )}
               </div>
 
-              <div className="flex flex-wrap gap-4 mt-4">
-                {project.link && (
+              {/* Action Buttons */}
+              <div className="flex flex-wrap gap-4 mt-4 items-center">
+                {/* Website (external) */}
+                {project.websiteUrl && (
                   <a
-                    href={project.link}
+                    href={project.websiteUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 rounded-full border border-white text-white font-semibold shadow-md hover:bg-white 
-                    hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                               hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                    aria-label="Visit website"
                   >
                     <span className="flex items-center gap-2">
-                      <FaGithub /> GitHub
+                      <FaExternalLinkAlt className="text-green-400" aria-hidden="true" />
+                      Visit site
                     </span>
                   </a>
                 )}
+
+                {/* GitHub */}
+                {project.githubUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 rounded-full border border-white text-white font-semibold shadow-md hover:bg-white 
+                               hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                    aria-label="Open GitHub repository"
+                  >
+                    <span className="flex items-center gap-2">
+                      <FaGithub className="text-white" aria-hidden="true" />
+                      GitHub
+                    </span>
+                  </a>
+                )}
+
+                {/* YouTube (first link as quick CTA) */}
                 {project.youtubeLinks && project.youtubeLinks.length > 0 && (
                   <a
                     href={project.youtubeLinks[0].url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 rounded-full border border-white text-white font-semibold shadow-md hover:bg-white 
-                             hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                               hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                    aria-label="Watch video"
                   >
                     <span className="flex items-center gap-2">
-                      <FaYoutube className="text-red-500" /> {"Watch"}
+                      <FaYoutube className="text-red-500" aria-hidden="true" />
+                      Watch
                     </span>
                   </a>
                 )}
+
+                {/* Learn more opens modal */}
                 {project.details && (
                   <button
                     onClick={() => setSelectedProject(project)}
                     className="ml-auto px-4 py-2 rounded-full bg-green-400 text-black font-semibold shadow-md hover:bg-green-300 
-                    transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                               transition-all duration-300 hover:scale-105 hover:shadow-lg"
                   >
                     Learn More
                   </button>
