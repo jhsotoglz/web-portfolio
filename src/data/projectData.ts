@@ -14,7 +14,8 @@ export interface Project {
   title: string;
   description: string;
   tech: string[];
-  link?: string;
+  websiteUrl?: string;
+  githubUrl?: string;
   youtubeLinks?: { label: string; url: string }[];
   details?: string;
   pdfs?: { name: string; url: string }[];
@@ -37,7 +38,8 @@ export const projects: Project[] = [
       "Tailwind CSS",
       "WebSocket",
     ],
-    link: undefined,
+    // websiteUrl: undefined,
+    // githubUrl: undefined,
     youtubeLinks: [
       { label: "Demo", url: "https://www.youtube.com/embed/H-c5zdhf0zs" }
     ],
@@ -85,8 +87,9 @@ export const projects: Project[] = [
       "Zod",
       "Framer Motion"
     ],
-    link: "https://agropecuariarg.vercel.app/",
-    youtubeLinks: [],
+    websiteUrl: "https://agropecuariarg.vercel.app/",
+    //githubUrl: "undefined",
+    //youtubeLinks: [],
     details: `The Agropecuaria RG Web App was designed with a dual focus:  
               
               1. Public Marketing Site  \n\n
@@ -129,8 +132,9 @@ export const projects: Project[] = [
       "Adversarial AI",
       "Probabilistic Modeling",
     ],
-    link: "https://github.com/jhsotoglz/ComS4720_Project3/tree/main",
-    youtubeLinks: undefined,
+    //websiteUrl: undefined,
+    githubUrl: "https://github.com/jhsotoglz/ComS4720_Project3/tree/main",
+    //youtubeLinks: undefined,
     details: `Probabilistic Escape-Pursuit Planning was the final project in a 3-part AI path planning series for COM S 4720 
               (Principles of Artificial Intelligence) at Iowa State University. The task simulated a competitive multi-agent environment 
               where three agents had to pursue their targets and evade pursuers on a shared grid with static obstacles and probabilistic 
@@ -166,7 +170,8 @@ export const projects: Project[] = [
     description: `A student-led Lunabotics-style robotics competition focused on lunar regolith excavation and delivery, 
                   featuring teams from across the U.S.`,
     tech: ["ROS 2", "Python", "CAN Bus", "Phoenix 6", "Teleop Control", "Autonomous Navigation"],
-    link: undefined,
+    //websiteUrl: undefined,
+    //githubUrl: undefined,
     youtubeLinks: [
       { label: "Day 1 - CoSMiC Live", url: "https://www.youtube.com/embed/lsF2a_niRuA" },
       { label: "Day 2 - CoSMiC Live", url: "https://www.youtube.com/embed/ao0e3zGLE_U" },
@@ -198,8 +203,9 @@ export const projects: Project[] = [
     title: "Kitchen Mingle – Android Recipe Finder App",
     description: "A full-stack mobile app that allows users to search for, save, and manage recipes based on ingredients. Built collaboratively as part of a semester-long team project for COM S 309 (Software Development Practices) at Iowa State University.",
     tech: ["Java", "Android", "Spring Boot", "MySQL", "REST API", "Agile", "CI/CD"],
-    link: "https://github.com/jhsotoglz/KitchenMingle_AndroidApp",
-    youtubeLinks: [],
+    //websiteUrl: undefined,
+    githubUrl: "https://github.com/jhsotoglz/KitchenMingle_AndroidApp",
+    //youtubeLinks: [],
     details: `As part of the Kitchen Mingle team, I worked primarily on the backend, designing and implementing RESTful APIs 
               using Spring Boot and structuring the MySQL database to store recipes, ingredients, and user data. I also supported 
               the frontend team by integrating API endpoints with the Android interface and helping debug UI-to-backend communication issues.\n\n
@@ -233,8 +239,9 @@ export const projects: Project[] = [
       "CLI",
       "NumPy"
     ],
-    link: "https://github.com/jhsotoglz/face_security_system",
-    youtubeLinks: [],
+    //websiteUrl: undefined,
+    githubUrl: "https://github.com/jhsotoglz/face_security_system",
+    //youtubeLinks: [],
     details: `Face Security File System is a work-in-progress command-line application created to deepen my understanding of the Python 
             programming language and its capabilities in computer vision, cryptography, and system design.\n\n
 
