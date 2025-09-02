@@ -12,6 +12,10 @@ import COSMIC_Photo3 from "../assets/projectFiles/CSMC/Competition3.png"
 
 import gridAIDetails from "../assets/projectFiles/GridAI/gridai-details.md?raw";
 import rgdetails from "../assets/projectFiles/RG/rg-details.md?raw";
+import coms4720details from "../assets/projectFiles/COMS472/COMS4720-details.md?raw";
+import cosmicDetails from "../assets/projectFiles/CSMC/cosmic-details.md?raw";
+import KitchenMingleDetails from "../assets/projectFiles/KitchenMingle/KitchenMingle-details.md?raw";
+import FaceSecurityDetails from "../assets/projectFiles/FaceSecurityFileSystem/FaceSecurity-details.md?raw";
 
 export interface Project {
   title: string;
@@ -88,29 +92,7 @@ export const projects: Project[] = [
     //websiteUrl: undefined,
     githubUrl: "https://github.com/jhsotoglz/ComS4720_Project3/tree/main",
     //youtubeLinks: undefined,
-    details: `Probabilistic Escape-Pursuit Planning was the final project in a 3-part AI path planning series for COM S 4720 
-              (Principles of Artificial Intelligence) at Iowa State University. The task simulated a competitive multi-agent environment 
-              where three agents had to pursue their targets and evade pursuers on a shared grid with static obstacles and probabilistic 
-              movement uncertainty.\n\n
-
-              Each student’s planner agent competed head-to-head. I developed a rotation-aware agent that earned first place, outperforming 
-              all others in both pursuit efficiency and evasion, and achieving the highest score in the class playoff.\n\n
-
-              The agent combines A* pathfinding with intelligent adaptation to unpredictable movement, where actions may randomly rotate 
-              left, right, or stay on course. I implemented a hybrid estimator using exponential moving averages (EMAs) and a sliding window 
-              to track rotation probabilities and inform real-time decisions.\n\n
-
-              The agent dynamically switches between three modes:\n\n
-
-              - Offensive: Pursues the target with pathfinding and noise correction.\n\n
-              - Defensive: Escapes threats while maximizing mobility.\n\n
-              - Normal: Maintains central positioning for flexibility.\n\n
-
-              A heuristic scoring system rewards center control, penalizes corners and dead ends, and evaluates all move variants for 
-              safety and effectiveness.\n\n
-
-              Tested across 100+ grid environments, the planner demonstrated strong adaptability and performance under uncertainty. 
-              It was built entirely in Python using NumPy and standard libraries, with an emphasis on efficient, self-contained AI logic.`,
+    details: coms4720details,
     pdfs: [
       { name: "Project 1 Report", url: ComS472_Project1 },
       { name: "Project 2 Report", url: ComS472_Project2 },
@@ -130,25 +112,7 @@ export const projects: Project[] = [
       { label: "Day 2 - CoSMiC Live", url: "https://www.youtube.com/embed/ao0e3zGLE_U" },
       { label: "Day 3 - CoSMiC Live", url: "https://www.youtube.com/embed/plyCCqee_GA" }
     ],
-    details: `After our team didn’t qualify for NASA’s official Lunabotics competition, the Cardinal Space Mining Club at 
-              Iowa State University launched our own event: the Collegiate Space Mining Competition (CoSMiC), a student-run 
-              Lunabotics-style competition.\n\n
-              
-              Hosted from May 21–24, the event brought together student teams from across the U.S. to compete with autonomous and 
-              teleoperated robots in a simulated lunar arena, with goals including regolith excavation, delivery, and 
-              autonomous navigation.\n\n
-              
-              I was part of the Controls Team and Motors Subteam, where I helped implement and test the robot's drivetrain system using 
-              Phoenix 6 motor controllers, CAN bus communication, and ROS 2. We integrated joystick-based teleoperation 
-              and began implementing autonomous mobility for regolith delivery tasks.\n\n
-              
-              In addition, I served as the club’s Safety Officer, where I ensured EH&S compliance, coordinated personal protective 
-              equipment (PPE) protocols, and helped establish safety procedures for battery handling, pit operations, and the Lunar Soil 
-              Simulant Arena.\n\n
-              
-              The event was sponsored by the Iowa Space Grant Consortium (ISGC) and featured three days of live-streamed competition. 
-              CoSMiC became a national platform for showcasing engineering talent and a powerful learning experience in robotics and 
-              systems integration.`,
+    details: cosmicDetails,
     pdfs: [],
     images: [LanceBot, COSMIC_Photo1, COSMIC_Photo2, COSMIC_Photo3]
   },
@@ -159,24 +123,7 @@ export const projects: Project[] = [
     //websiteUrl: undefined,
     githubUrl: "https://github.com/jhsotoglz/KitchenMingle_AndroidApp",
     //youtubeLinks: [],
-    details: `As part of the Kitchen Mingle team, I worked primarily on the backend, designing and implementing RESTful APIs 
-              using Spring Boot and structuring the MySQL database to store recipes, ingredients, and user data. I also supported 
-              the frontend team by integrating API endpoints with the Android interface and helping debug UI-to-backend communication issues.\n\n
-
-              This project was developed as part of COM S 309: Software Development Practices, a course designed to simulate 
-              real-world industry environments. The class emphasized agile collaboration, requirement gathering, and end-to-end software 
-              delivery.\n\n
-
-              Key features:\n\n
-              - Ingredient-based recipe search using external APIs\n\n
-              - User authentication, recipe saving, and persistent storage\n\n
-              - MySQL schema design with proper relational mapping and query optimization\n\n
-              - Client-server architecture following REST principles\n\n
-              - Weekly scrum meetings, peer accountability, and formal documentation of the software lifecycle (requirements, 
-                design, testing, and ethics)\n\n
-
-              The project strengthened my skills in team-based development, communication across roles, and managing both backend 
-              logic and frontend integration.`,
+    details: KitchenMingleDetails,
     pdfs: [],
     images: []
   },
@@ -195,28 +142,7 @@ export const projects: Project[] = [
     //websiteUrl: undefined,
     githubUrl: "https://github.com/jhsotoglz/face_security_system",
     //youtubeLinks: [],
-    details: `Face Security File System is a work-in-progress command-line application created to deepen my understanding of the Python 
-            programming language and its capabilities in computer vision, cryptography, and system design.\n\n
-
-            The tool enables users to register with a facial image, log in using real-time webcam recognition, and securely 
-            encrypt or decrypt personal files. It uses OpenCV for video capture, the face_recognition library for biometric 
-            verification, and Python’s cryptography package to perform symmetric file encryption using Fernet.\n\n
-
-            Key features implemented so far:\n
-            - Face-based user registration and encoding\n
-            - Real-time facial recognition login\n
-            - Secure file encryption and decryption\n
-            - Automatic deletion of original or encrypted files upon conversion\n
-            - CLI interface for local testing and file protection\n\n
-
-            Planned future improvements:\n
-            - Per-user key handling for improved security\n
-            - GUI interface using Tkinter or PyQt\n
-            - Gesture-based controls for interaction\n
-            - Key lifecycle management and activity logging\n\n
-
-            This project serves as a practical way to build hands-on experience with Python's ecosystem and push 
-            beyond traditional scripting into applied security and interactive user interfaces.`,
+    details: FaceSecurityDetails,
     pdfs: [],
     images: []
   }
