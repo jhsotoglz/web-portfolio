@@ -1,4 +1,3 @@
-# Kitchen Mingle – Android Recipe Finder App
 
 ## Overview
 **Kitchen Mingle** is a full-stack mobile application that allows users to **search, save, and manage recipes** based on ingredients they already have.  

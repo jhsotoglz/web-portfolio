@@ -1,5 +1,3 @@
-# Face Security File System
-
 ## Overview
 **Face Security File System** is a **facial recognition-based command-line application** that protects personal files through biometric authentication and **symmetric encryption**.  
 The project is a work-in-progress designed to deepen my knowledge of **Python**, exploring areas such as **computer vision**, **cryptography**, and **system design**.

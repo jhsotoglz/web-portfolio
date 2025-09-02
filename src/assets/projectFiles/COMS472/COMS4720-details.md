@@ -1,5 +1,3 @@
-# Probabilistic Escape-Pursuit Planning
-
 ## Overview
 **Probabilistic Escape-Pursuit Planning** was the final project in a **3-part AI path planning series** for **COM S 4720 (Principles of Artificial Intelligence)** at Iowa State University.  
 The system simulates a competitive **multi-agent grid environment** where agents must **pursue targets** while also **evading pursuers** under **stochastic movement conditions**.

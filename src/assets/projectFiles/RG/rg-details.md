@@ -1,5 +1,3 @@
-# Agropecuaria RG – Web App
-
 ## Overview
 **Agropecuaria RG – Web App** is a full-stack platform that unifies a modern **public marketing site** with a secure **private admin dashboard** for internal finance and operations.  
 It was designed to strengthen the company’s **brand presence** while also providing practical tools to manage day-to-day business activities.

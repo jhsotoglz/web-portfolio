@@ -1,5 +1,6 @@
 import React, { useLayoutEffect } from "react";
 import type { Project } from "../data/projectData";
+import Markdown from "./Markdown";
 
 interface Props {
   project: Project;
@@ -41,14 +42,10 @@ const ProjectDetailsModal: React.FC<Props> = ({ project, onClose }) => {
           {/* Title */}
           <h2 className="text-3xl font-bold mt-2 mb-4 text-green-400">{project.title}</h2>
 
-          {/* Details Text */}
+          {/* Details (Markdown) */}
           {project.details && (
-            <div className="text-white mb-6">
-              {project.details.split('\n\n').map((paragraph, idx) => (
-                <p key={idx} className="mb-4">
-                  {paragraph}
-                </p>
-              ))}
+            <div className="mb-6">
+              <Markdown>{project.details}</Markdown>
             </div>
           )}
 

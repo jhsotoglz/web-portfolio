@@ -1,5 +1,3 @@
-# CoSMiC Competition – hosted by the Cardinal Space Mining Club at ISU
-
 ## Overview
 The **Collegiate Space Mining Competition (CoSMiC)** is a **student-led Lunabotics-style robotics competition** launched by the **Cardinal Space Mining Club** at Iowa State University.  
 When the team didn’t qualify for NASA’s official Lunabotics competition, the club created its own national event to continue pushing the boundaries of robotics and collaboration.

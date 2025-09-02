@@ -1,6 +1,3 @@
-# GridAI: Electric Grid Management Web Platform
-
-## Overview
 **GridAI** is an advanced web-based platform developed at **Iowa State University** to address challenges in modern energy distribution systems.  
 It simplifies data analytics, provides seamless interaction with live telemetry, and enables operators to maintain **grid stability and efficiency**.
 
