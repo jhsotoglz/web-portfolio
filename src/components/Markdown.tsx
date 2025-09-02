@@ -55,7 +55,7 @@ export default function Markdown({
       className={[
         // Base typography
         "prose prose-invert",
-        // Comfortable reading width (≈70–75 characters)
+        // Comfortable reading width
         "max-w-[72ch] md:max-w-[90ch]",
         // Slightly softer paragraph color + comfy line height
         "text-white/90 leading-relaxed",

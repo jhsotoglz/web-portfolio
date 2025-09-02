@@ -11,6 +11,7 @@ import COSMIC_Photo2 from "../assets/projectFiles/CSMC/Competition2.png"
 import COSMIC_Photo3 from "../assets/projectFiles/CSMC/Competition3.png"
 
 import gridAIDetails from "../assets/projectFiles/GridAI/gridai-details.md?raw";
+import rgdetails from "../assets/projectFiles/RG/rg-details.md?raw";
 
 export interface Project {
   title: string;
@@ -69,34 +70,7 @@ export const projects: Project[] = [
     websiteUrl: "https://agropecuariarg.vercel.app/",
     //githubUrl: "undefined",
     //youtubeLinks: [],
-    details: `The Agropecuaria RG Web App was designed with a dual focus:  
-              
-              1. Public Marketing Site  \n\n
-              - Showcases the family-owned farming business.  \n\n
-              - Includes a video hero banner with high-quality media hosted in the app.  \n\n
-              - Sections for company history, services, metrics, and a styled contact section linked with a Google Maps route.  \n\n
-              - Responsive, mobile-friendly UI with animations via Framer Motion for a polished brand presence.  \n\n
-
-              2. Private Admin Dashboard (Herramientas)  \n\n
-              - Invite-only access with Supabase authentication and route protection.  \n\n
-              - Land rent management: automatic calculation of hectares, annual pricing, and contract durations.  \n\n
-              - Renter registry: includes INE (ID) numbers, pricing per hectare, and full historical records.  \n\n
-              - Employee tracking and payroll support with configurable terms.  \n\n
-              - Secure password reset flow and localized Spanish-language forms/messages.  \n\n
-              - Robust form validation powered by Zod + React Hook Form, ensuring clean and consistent data.  \n\n
-
-              Architecture & Technical Choices  \n\n
-              - Next.js (App Router) with TypeScript for scalability and type safety.  \n\n
-              - Supabase as the backend (auth, database, and storage) for rapid development and secure operations.  \n\n
-              - Tailwind CSS + shadcn/ui for a responsive, modern UI with reusable components.  \n\n
-              - Zod schemas unify client- and server-side validation.  \n\n
-              - Framer Motion adds smooth animations for the marketing side.  \n\n
-              - Deployed on Vercel, leveraging CI/CD pipelines and global edge network performance.  \n\n
-
-              Impact  \n\n
-              The project provides Agropecuaria RG with a professional-grade web presence for customers while simultaneously \n\n
-              giving the business a secure, centralized platform for operational management. This balance of external marketing \n\n
-              and internal tools drives both brand visibility and efficiency in day-to-day operations.`
+    details: rgdetails,
   },
 
   {
