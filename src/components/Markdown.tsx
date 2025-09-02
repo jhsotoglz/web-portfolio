@@ -1,5 +1,4 @@
 // src/components/Markdown.tsx
-
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import remarkBreaks from "remark-breaks";
@@ -10,6 +9,8 @@ type MdProps = {
   stripTopH1?: boolean;
   /** add 1 to all heading levels (h1->h2, etc.) */
   demoteHeadings?: boolean;
+  /** slightly tighter spacing */
+  compact?: boolean;
 };
 
 function remarkStripFirstH1() {
@@ -41,8 +42,9 @@ function remarkDemoteHeadings(by = 1) {
 
 export default function Markdown({
   children,
-  stripTopH1 = true,       // default: hide the first H1 (since modal already shows a title)
-  demoteHeadings = false,   // set true if you also want to shift levels down
+  stripTopH1 = true,      // modal already shows a title
+  demoteHeadings = false,  // turn on if your md uses many H1s
+  compact = false,
 }: MdProps) {
   const plugins = [remarkGfm, remarkBreaks] as any[];
   if (stripTopH1) plugins.push(remarkStripFirstH1);
@@ -51,12 +53,26 @@ export default function Markdown({
   return (
     <article
       className={[
-        "prose prose-invert max-w-none",
-        "prose-headings:text-green-400 prose-a:text-green-400",
-        "prose-hr:border-white/10 prose-blockquote:border-l-green-400",
-        "prose-strong:text-white",
-        "prose-pre:bg-white/5 prose-pre:border prose-pre:border-white/10",
-        "prose-code:bg-white/10 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded",
+        // Base typography
+        "prose prose-invert",
+        // Comfortable reading width (≈70–75 characters)
+        "max-w-[72ch] md:max-w-[90ch]",
+        // Slightly softer paragraph color + comfy line height
+        "text-white/90 leading-relaxed",
+        // Headings
+        "prose-headings:prose-headings:font-semibold prose-headings:tracking-tight",
+        "prose-h2:text-green-400 text-l prose-h2:mt-5 prose-h2:mb-3",
+        "prose-h3:text-green-200 text-l prose-h3:mt-4 prose-h3:mb-2",
+        "prose-h4:text-green-200 mt-3 prose-h4:mb-1",
+        // Paragraph + spacing rhythm
+        compact ? "prose-p:my-2" : "prose-p:my-3",
+        // Lists
+        compact ? "prose-ul:my-2 prose-ol:my-2" : "prose-ul:my-3 prose-ol:my-3",
+        "prose-li:my-1 prose-ol:marker:text-green-300 prose-li:marker:text-gray-500",
+        // HR
+        "prose-hr:my-8",
+        // Make anchored headings not hide behind sticky nav
+        "prose-headings:scroll-mt-24",
       ].join(" ")}
     >
       <ReactMarkdown remarkPlugins={plugins}>{children}</ReactMarkdown>
