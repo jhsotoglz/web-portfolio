@@ -10,6 +10,13 @@ import COSMIC_Photo1 from "../assets/projectFiles/CSMC/Competition1.png"
 import COSMIC_Photo2 from "../assets/projectFiles/CSMC/Competition2.png"
 import COSMIC_Photo3 from "../assets/projectFiles/CSMC/Competition3.png"
 
+import gridAIDetails from "../assets/projectFiles/GridAI/gridai-details.md?raw";
+import rgdetails from "../assets/projectFiles/RG/rg-details.md?raw";
+import coms4720details from "../assets/projectFiles/COMS472/COMS4720-details.md?raw";
+import cosmicDetails from "../assets/projectFiles/CSMC/cosmic-details.md?raw";
+import KitchenMingleDetails from "../assets/projectFiles/KitchenMingle/KitchenMingle-details.md?raw";
+import FaceSecurityDetails from "../assets/projectFiles/FaceSecurityFileSystem/FaceSecurity-details.md?raw";
+
 export interface Project {
   title: string;
   description: string;
@@ -43,30 +50,7 @@ export const projects: Project[] = [
     youtubeLinks: [
       { label: "Demo", url: "https://www.youtube.com/embed/H-c5zdhf0zs" }
     ],
-    details: `GridAI is a proprietary platform developed at Iowa State University to address challenges in modern energy distribution 
-              systems. It provides solutions for predicting outages, optimizing power flow, and managing distributed energy resources 
-              (DERs), enabling operators to maintain grid stability and efficiency.\n\n
-    
-              While GridAI’s backend was robust, its baseline front-end had limitations that required enhancements to meet diverse user 
-              needs. Our senior design team focused on improving existing components and developing new features to deliver a more 
-              user-friendly and efficient interface.\n\n
-              
-              Within the team, I was responsible for designing and implementing a real-time widget system with a built-in code editor. 
-              This system allows users to observe live electric grid data and customize widgets using code or settings to suit their 
-              specific needs.\n\n
-              
-              I developed a comprehensive Widget Editor with a four-quadrant layout using React and TypeScript, enabling live code 
-              editing with the Monaco Editor and real-time JSX previews powered by Babel. Users can modify widget templates, controller 
-              scripts, and metadata such as title, measurement type, and Kafka node key.\n\n
-              
-              I also built and maintained various components, including the widget list manager, widget creation forms with predefined 
-              templates, telemetry subscription handlers, and error-isolated rendering using React boundaries. On the backend, I 
-              contributed to the Kafka-based real-time telemetry system, which filters, transforms, and emits live data through 
-              WebSocket connections.\n\n
-              
-              The system implements a full set of RESTful API endpoints for widget management, allowing users to create, read, update, 
-              and delete widget configurations. These routes are secured using Firebase token authentication and persist data in Firestore. 
-              Real-time updates ensure seamless dashboard integration and immediate feedback when working with live telemetry data.`,
+    details: gridAIDetails,
     pdfs: [
       { name: "IRP Presentation", url: GridAIPresentation },
       { name: "Final Report", url: FinalReport },
@@ -90,34 +74,7 @@ export const projects: Project[] = [
     websiteUrl: "https://agropecuariarg.vercel.app/",
     //githubUrl: "undefined",
     //youtubeLinks: [],
-    details: `The Agropecuaria RG Web App was designed with a dual focus:  
-              
-              1. Public Marketing Site  \n\n
-              - Showcases the family-owned farming business.  \n\n
-              - Includes a video hero banner with high-quality media hosted in the app.  \n\n
-              - Sections for company history, services, metrics, and a styled contact section linked with a Google Maps route.  \n\n
-              - Responsive, mobile-friendly UI with animations via Framer Motion for a polished brand presence.  \n\n
-
-              2. Private Admin Dashboard (Herramientas)  \n\n
-              - Invite-only access with Supabase authentication and route protection.  \n\n
-              - Land rent management: automatic calculation of hectares, annual pricing, and contract durations.  \n\n
-              - Renter registry: includes INE (ID) numbers, pricing per hectare, and full historical records.  \n\n
-              - Employee tracking and payroll support with configurable terms.  \n\n
-              - Secure password reset flow and localized Spanish-language forms/messages.  \n\n
-              - Robust form validation powered by Zod + React Hook Form, ensuring clean and consistent data.  \n\n
-
-              Architecture & Technical Choices  \n\n
-              - Next.js (App Router) with TypeScript for scalability and type safety.  \n\n
-              - Supabase as the backend (auth, database, and storage) for rapid development and secure operations.  \n\n
-              - Tailwind CSS + shadcn/ui for a responsive, modern UI with reusable components.  \n\n
-              - Zod schemas unify client- and server-side validation.  \n\n
-              - Framer Motion adds smooth animations for the marketing side.  \n\n
-              - Deployed on Vercel, leveraging CI/CD pipelines and global edge network performance.  \n\n
-
-              Impact  \n\n
-              The project provides Agropecuaria RG with a professional-grade web presence for customers while simultaneously \n\n
-              giving the business a secure, centralized platform for operational management. This balance of external marketing \n\n
-              and internal tools drives both brand visibility and efficiency in day-to-day operations.`
+    details: rgdetails,
   },
 
   {
@@ -135,29 +92,7 @@ export const projects: Project[] = [
     //websiteUrl: undefined,
     githubUrl: "https://github.com/jhsotoglz/ComS4720_Project3/tree/main",
     //youtubeLinks: undefined,
-    details: `Probabilistic Escape-Pursuit Planning was the final project in a 3-part AI path planning series for COM S 4720 
-              (Principles of Artificial Intelligence) at Iowa State University. The task simulated a competitive multi-agent environment 
-              where three agents had to pursue their targets and evade pursuers on a shared grid with static obstacles and probabilistic 
-              movement uncertainty.\n\n
-
-              Each student’s planner agent competed head-to-head. I developed a rotation-aware agent that earned first place, outperforming 
-              all others in both pursuit efficiency and evasion, and achieving the highest score in the class playoff.\n\n
-
-              The agent combines A* pathfinding with intelligent adaptation to unpredictable movement, where actions may randomly rotate 
-              left, right, or stay on course. I implemented a hybrid estimator using exponential moving averages (EMAs) and a sliding window 
-              to track rotation probabilities and inform real-time decisions.\n\n
-
-              The agent dynamically switches between three modes:\n\n
-
-              - Offensive: Pursues the target with pathfinding and noise correction.\n\n
-              - Defensive: Escapes threats while maximizing mobility.\n\n
-              - Normal: Maintains central positioning for flexibility.\n\n
-
-              A heuristic scoring system rewards center control, penalizes corners and dead ends, and evaluates all move variants for 
-              safety and effectiveness.\n\n
-
-              Tested across 100+ grid environments, the planner demonstrated strong adaptability and performance under uncertainty. 
-              It was built entirely in Python using NumPy and standard libraries, with an emphasis on efficient, self-contained AI logic.`,
+    details: coms4720details,
     pdfs: [
       { name: "Project 1 Report", url: ComS472_Project1 },
       { name: "Project 2 Report", url: ComS472_Project2 },
@@ -177,25 +112,7 @@ export const projects: Project[] = [
       { label: "Day 2 - CoSMiC Live", url: "https://www.youtube.com/embed/ao0e3zGLE_U" },
       { label: "Day 3 - CoSMiC Live", url: "https://www.youtube.com/embed/plyCCqee_GA" }
     ],
-    details: `After our team didn’t qualify for NASA’s official Lunabotics competition, the Cardinal Space Mining Club at 
-              Iowa State University launched our own event: the Collegiate Space Mining Competition (CoSMiC), a student-run 
-              Lunabotics-style competition.\n\n
-              
-              Hosted from May 21–24, the event brought together student teams from across the U.S. to compete with autonomous and 
-              teleoperated robots in a simulated lunar arena, with goals including regolith excavation, delivery, and 
-              autonomous navigation.\n\n
-              
-              I was part of the Controls Team and Motors Subteam, where I helped implement and test the robot's drivetrain system using 
-              Phoenix 6 motor controllers, CAN bus communication, and ROS 2. We integrated joystick-based teleoperation 
-              and began implementing autonomous mobility for regolith delivery tasks.\n\n
-              
-              In addition, I served as the club’s Safety Officer, where I ensured EH&S compliance, coordinated personal protective 
-              equipment (PPE) protocols, and helped establish safety procedures for battery handling, pit operations, and the Lunar Soil 
-              Simulant Arena.\n\n
-              
-              The event was sponsored by the Iowa Space Grant Consortium (ISGC) and featured three days of live-streamed competition. 
-              CoSMiC became a national platform for showcasing engineering talent and a powerful learning experience in robotics and 
-              systems integration.`,
+    details: cosmicDetails,
     pdfs: [],
     images: [LanceBot, COSMIC_Photo1, COSMIC_Photo2, COSMIC_Photo3]
   },
@@ -206,24 +123,7 @@ export const projects: Project[] = [
     //websiteUrl: undefined,
     githubUrl: "https://github.com/jhsotoglz/KitchenMingle_AndroidApp",
     //youtubeLinks: [],
-    details: `As part of the Kitchen Mingle team, I worked primarily on the backend, designing and implementing RESTful APIs 
-              using Spring Boot and structuring the MySQL database to store recipes, ingredients, and user data. I also supported 
-              the frontend team by integrating API endpoints with the Android interface and helping debug UI-to-backend communication issues.\n\n
-
-              This project was developed as part of COM S 309: Software Development Practices, a course designed to simulate 
-              real-world industry environments. The class emphasized agile collaboration, requirement gathering, and end-to-end software 
-              delivery.\n\n
-
-              Key features:\n\n
-              - Ingredient-based recipe search using external APIs\n\n
-              - User authentication, recipe saving, and persistent storage\n\n
-              - MySQL schema design with proper relational mapping and query optimization\n\n
-              - Client-server architecture following REST principles\n\n
-              - Weekly scrum meetings, peer accountability, and formal documentation of the software lifecycle (requirements, 
-                design, testing, and ethics)\n\n
-
-              The project strengthened my skills in team-based development, communication across roles, and managing both backend 
-              logic and frontend integration.`,
+    details: KitchenMingleDetails,
     pdfs: [],
     images: []
   },
@@ -242,28 +142,7 @@ export const projects: Project[] = [
     //websiteUrl: undefined,
     githubUrl: "https://github.com/jhsotoglz/face_security_system",
     //youtubeLinks: [],
-    details: `Face Security File System is a work-in-progress command-line application created to deepen my understanding of the Python 
-            programming language and its capabilities in computer vision, cryptography, and system design.\n\n
-
-            The tool enables users to register with a facial image, log in using real-time webcam recognition, and securely 
-            encrypt or decrypt personal files. It uses OpenCV for video capture, the face_recognition library for biometric 
-            verification, and Python’s cryptography package to perform symmetric file encryption using Fernet.\n\n
-
-            Key features implemented so far:\n
-            - Face-based user registration and encoding\n
-            - Real-time facial recognition login\n
-            - Secure file encryption and decryption\n
-            - Automatic deletion of original or encrypted files upon conversion\n
-            - CLI interface for local testing and file protection\n\n
-
-            Planned future improvements:\n
-            - Per-user key handling for improved security\n
-            - GUI interface using Tkinter or PyQt\n
-            - Gesture-based controls for interaction\n
-            - Key lifecycle management and activity logging\n\n
-
-            This project serves as a practical way to build hands-on experience with Python's ecosystem and push 
-            beyond traditional scripting into applied security and interactive user interfaces.`,
+    details: FaceSecurityDetails,
     pdfs: [],
     images: []
   }
