@@ -62,12 +62,12 @@ export const projects: Project[] = [
     description: `A full-stack web platform for Agropecuaria RG that unifies a modern public marketing site with a secure, 
                   private admin dashboard for internal finance and operations.`,
     tech: [
-      "Next.js (App Router)",
+      "Next.js",
       "TypeScript",
       "React",
       "Tailwind CSS",
       "shadcn/ui",
-      "Supabase (Auth, DB, Storage)",
+      "Supabase",
       "Zod",
       "Framer Motion"
     ],
@@ -129,7 +129,7 @@ export const projects: Project[] = [
   },
   {
     title: "Face Security File System",
-    description: "A facial recognition-based CLI tool that protects personal files through biometric access and symmetric encryption.",
+    description: "A facial recognition-based CLI tool that protects personal files through biometric access, symmetric encryption, and local authentication, enabling secure file encryption and decryption without needing internet access.",
     tech: [
       "Python",
       "OpenCV",
