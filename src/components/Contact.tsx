@@ -1,5 +1,5 @@
 import { useState } from "react";
-import resume from "../assets/resume/Resume2025.pdf";
+import resume from "../assets/resume/Jesus_Soto_Resume.pdf";
 
 type Status = "idle" | "sending" | "ok" | "error";
 
